@@ -36,6 +36,9 @@ module.exports = {
 
   plugins: [
     '@vuepress/back-to-top',
-    '@vuepress/pwa',
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true,
+    }],
   ],
 };
