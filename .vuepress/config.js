@@ -7,7 +7,7 @@ module.exports = {
   title: TITLE,
   description: DESCRIPTION,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#389d70' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
     ['meta', { name: 'og:title', content: TITLE }],
