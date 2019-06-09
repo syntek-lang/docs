@@ -19,7 +19,7 @@ An outdent token is added when the current line starts with less tabs than the p
 Comments are ignored by the compiler. A comment starts with `#` and ends on the first newline character. To allow a line to contain a statement and a comment, the newline character is not consumed by the comment.
 
 ### Empty lines
-Empty lines are ignored by the compiler. An empty line does not add an indent or outdent token.
+Empty lines are lines that do not contain any characters or only consist of whitespace. Empty lines are ignored by the compiler and do not add an indent or outdent token.
 
 ### Spaces and tabs
 Space and tab characters are ignored by the compiler.
@@ -29,6 +29,16 @@ Space and tab characters are ignored by the compiler.
 Identifiers are user defined names for entities such as variables and functions. An identifier is a sequence of one or more letters, digits, and underscores. The first character in an identifier must be a letter or underscore.
 
 Keywords and literals cannot be used as identifiers.
+
+```syntek
+# valid
+a
+_0x0
+HelloWorld
+
+# invalid
+0_
+```
 
 ## Keywords
 
@@ -45,10 +55,10 @@ is greater less than
 
 ## Operators and punctuation
 
-The following character sequences represent operators and punctuation:
+The following characters represent operators and punctuation:
 ```
 + - * / % ^
-, . [ ] ( ) [ ]
+. , [ ] ( ) [ ]
 =
 ```
 
@@ -57,14 +67,55 @@ The following character sequences represent operators and punctuation:
 ### Number
 Number represents any integer and floating point value, stored according to the IEEE 754 standard. There are no direct `int` and `float` types.
 
-A number can be a single `0` or a sequence of the digits `1-9` followed by any number of digits, optionally followed by a `.` and one or more digits.
+A number is a sequence of one or more digits, optionally followed by a `.` and one or more digits.
 
 `+` and `-` characters in front of a number are not apart of the number.
 
 Numbers can contain underscores to make them more readable. Underscores are ignored by the compiler.
 
+```syntek
+# valid
+0
+0.1
+150
+745.16
+82.000001
+
+# invalid
+5.
+.9
+```
+
 ### String
-A string literal consists of zero or more characters enclosed in single quotes. Strings can only span over a single line. Strings can contain control codes and escaped single quotes.
+A string literal consists of zero or more characters enclosed in single quotes. Strings can only span over a single line.
+
+After a backslash, certain single-character escapes represent special values:
+- `\'` single quote
+- `\\` backslash
+- `\b` backspace
+- `\f` form feed
+- `\n` newline
+- `\r` carriage return
+- `\t` horizontal tab
+- `\v` vertical tab
+
+```syntek
+# valid
+''
+'a'
+'hello'
+'\t'
+'\''
+'\\'
+
+# invalid
+'\'
+```
 
 ### Boolean
 A boolean can have 2 values. `true` and `false`.
+
+```syntek
+true
+false
+```
