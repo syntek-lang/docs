@@ -17,16 +17,17 @@ module.exports = {
     },
   ],
   '/spec/': [
+    '/spec/',
+    '/spec/grammar/lexical-grammar',
     {
-      title: 'Specification',
+      title: 'Declarations',
       children: [
-        '/spec/',
-      ],
-    },
-    {
-      title: 'Grammar',
-      children: [
-        '/spec/grammar/lexical-grammar',
+        '/spec/grammar/declarations/',
+        '/spec/grammar/declarations/variable-declaration',
+        '/spec/grammar/declarations/function-declaration',
+        '/spec/grammar/declarations/class-declaration',
+        '/spec/grammar/declarations/interface-declaration',
+        '/spec/grammar/declarations/import-declaration',
       ],
     },
   ],
