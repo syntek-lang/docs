@@ -1,32 +1,39 @@
+const sidebar = require('./sidebar.js');
+
+const TITLE = 'Syntek Documentation';
+const DESCRIPTION = 'Documentation of the Syntek programming language';
+
 module.exports = {
-  title: 'Syntek',
-  description: 'A beginner friendly programming language',
+  title: TITLE,
+  description: DESCRIPTION,
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#389d70' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'og:title', content: TITLE }],
+    ['meta', { name: 'og:description', content: DESCRIPTION }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:url', content: 'https://docs.syntek.dev/' }],
+    ['meta', { name: 'og:locale', content: 'en_US' }],
+  ],
+
   themeConfig: {
     logo: '/images/logo.png',
+    repo: 'syntek-lang/docs',
+    sidebarDepth: 3,
+    editLinks: true,
+    lastUpdated: true,
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { text: 'Site', link: 'https://syntek.dev/' },
-      { text: 'GitHub', link: 'https://github.com/syntek-lang' },
     ],
-    sidebar: {
-      '/guide/': [
-        '',
-        'variables',
-        'operators',
-        'loops',
-        'conditional_statements',
-        'functions',
-        'classes',
-        'imports',
-        'typings',
-        'api',
-      ],
-    },
-    displayAllHeaders: true,
+
+    sidebar,
   },
+
   plugins: [
-    '@vuepress/active-header-links',
     '@vuepress/back-to-top',
     '@vuepress/pwa',
   ],
