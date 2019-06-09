@@ -27,6 +27,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
+      { text: 'Specification', link: '/spec/' },
       { text: 'Site', link: 'https://syntek.dev/' },
     ],
 

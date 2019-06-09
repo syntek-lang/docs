@@ -16,6 +16,14 @@ module.exports = {
       ],
     },
   ],
+  '/spec/': [
+    {
+      title: 'Specification',
+      children: [
+        '/spec/',
+      ],
+    },
+  ],
 };
 
 for (const group of Object.values(module.exports)) {

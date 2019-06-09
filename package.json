@@ -2,7 +2,7 @@
   "name": "docs",
   "version": "0.0.1",
   "scripts": {
-    "test": "npm run build",
+    "test": "npm run lint && npm run build",
     "dev": "vuepress dev",
     "build": "vuepress build",
     "lint": "eslint ."
