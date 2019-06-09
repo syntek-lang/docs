@@ -23,6 +23,12 @@ module.exports = {
         '/spec/',
       ],
     },
+    {
+      title: 'Grammar',
+      children: [
+        '/spec/grammar/lexical-grammar',
+      ],
+    },
   ],
 };
 
