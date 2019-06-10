@@ -69,7 +69,7 @@ Number represents any integer and floating point value, stored according to the 
 
 A number is a sequence of one or more digits, optionally followed by a `.` and one or more digits.
 
-`+` and `-` characters in front of a number are not apart of the number.
+`+` and `-` characters in front of a number are not a part of the number.
 
 Numbers can contain underscores to make them more readable. Underscores are ignored by the compiler.
 
