@@ -43,7 +43,7 @@ HelloWorld
 ## Keywords
 
 The following keywords are reserved and cannot be used as identifiers:
-```
+```syntek
 class new static this
 if else
 function return returns
@@ -56,9 +56,9 @@ is greater less than
 ## Operators and punctuation
 
 The following characters represent operators and punctuation:
-```
+```syntek
 + - * / % ^
-. , [ ] ( ) [ ]
+. , [ ] ( ) { }
 =
 ```
 
