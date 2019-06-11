@@ -3,7 +3,7 @@
 A function declaration stores a function under an identifier. The identifier can be used to call the function.
 
 ## Structure
-```
+```grammar
 Block = Indent ( Expression | Declaration | Statement )+ Outdent
 
 Type = Identifier ( '[]' )*

@@ -3,7 +3,7 @@
 A variable declaration stores a value under the given identifier. The identifier can be used to retrieve the value.
 
 ## Structure
-```
+```grammar
 Type = Identifier ( '[]' )*
 VarDecl = Type? Identifier '=' Expression
 ```

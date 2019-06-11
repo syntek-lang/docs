@@ -1,5 +1,6 @@
 const sidebar = require('./sidebar.js');
-const prismSyntek = require('./prism-syntek.js');
+const prismSyntek = require('./highlight/prism-syntek.js');
+const prismGrammar = require('./highlight/prism-grammar.js');
 
 const TITLE = 'Syntek Documentation';
 const DESCRIPTION = 'Documentation of the Syntek programming language';
@@ -7,8 +8,9 @@ const DESCRIPTION = 'Documentation of the Syntek programming language';
 module.exports = {
   markdown: {
     extendMarkdown() {
-      // Load Syntek highlighting mode
+      // Load Syntek and grammar highlighting mode
       prismSyntek(this.Prism);
+      prismGrammar(this.Prism);
     },
   },
 
