@@ -72,7 +72,7 @@ syntek.createFunction('moveLeft', () => {
   // Handle logic for moving the snake left
 });
 
-document.addEventListener('keydown', event => {
+document.addEventListener('keydown', (event) => {
   switch (event.key) {
     case 'ArrowUp':
       syntek.executeFunction('arrowUp');
@@ -85,6 +85,8 @@ document.addEventListener('keydown', event => {
       break;
     case 'ArrowLeft':
       syntek.executeFunction('arrowLeft');
+      break;
+    default:
       break;
   }
 });

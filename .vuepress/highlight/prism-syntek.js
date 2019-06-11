@@ -27,7 +27,7 @@ module.exports = (prism) => {
 
     keyword: /\b(?:class|new|static|this|if|else|function|return|returns|import|as|for|in|repeat|times|while|continue|break|and|or|not|is|greater|less|than)\b/,
     boolean: /\b(?:true|false)\b/,
-    number: /\b\d+(?:\.\d+)?/i,
+    number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: /[+\-*/%^=]/,
     punctuation: /[.,[\](){}]/,
   };

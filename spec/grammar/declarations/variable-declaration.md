@@ -5,7 +5,7 @@ A variable declaration stores a value under the given identifier. The identifier
 ## Structure
 ```grammar
 Type = Identifier ( '[]' )*
-VarDecl = Type? Identifier '=' Expression
+VarDecl = Type? Identifier '=' Expression Newline
 ```
 
 ## Example
