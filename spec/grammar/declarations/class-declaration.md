@@ -20,11 +20,11 @@ class MyClass
 
 class Child extends MyClass
 	static Number x = 5
-	static Number y = x + 10
+	static Number y = 15
 
-class SuperClass extends Child, AnotherClass
-	function SuperClass()
-		print('New instance of SuperClass!')
+class UltraClass extends Child, AnotherClass
+	function UltraClass()
+		print('New instance of UltraClass!')
 ```
 
 ## References

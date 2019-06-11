@@ -19,3 +19,4 @@ Number[][] matrix = [[1, 2], [3, 4]]
 ## References
 - [Identifier](/spec/grammar/lexical-grammar.html#identifiers)
 - [Newline](/spec/grammar/lexical-grammar.html#newline)
+- [Expression](/spec/grammar/expressions/)

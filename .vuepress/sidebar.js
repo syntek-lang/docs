@@ -29,6 +29,34 @@ module.exports = {
         '/spec/grammar/declarations/import-declaration',
       ],
     },
+    {
+      title: 'Expressions',
+      children: [
+        '/spec/grammar/expressions/',
+        '/spec/grammar/expressions/unary-expression',
+        '/spec/grammar/expressions/binary-expression',
+        '/spec/grammar/expressions/logical-expression',
+        '/spec/grammar/expressions/call-expression',
+        '/spec/grammar/expressions/index-expression',
+        '/spec/grammar/expressions/member-expression',
+        '/spec/grammar/expressions/new-expression',
+        '/spec/grammar/expressions/array-expression',
+        '/spec/grammar/expressions/object-expression',
+      ],
+    },
+    {
+      title: 'Statements',
+      children: [
+        '/spec/grammar/statements/',
+        '/spec/grammar/statements/expression-statement',
+        '/spec/grammar/statements/if-statement',
+        '/spec/grammar/statements/switch-statement',
+        '/spec/grammar/statements/for-statement',
+        '/spec/grammar/statements/repeat-statement',
+        '/spec/grammar/statements/while-statement',
+        '/spec/grammar/statements/return-statement',
+      ],
+    },
   ],
 };
 
