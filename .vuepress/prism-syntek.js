@@ -13,17 +13,17 @@ module.exports = (prism) => {
       greedy: true,
     },
 
+    function: {
+      pattern: /[a-zA-Z_]\w*(?=\s*\()/,
+      greedy: true,
+    },
+
     property: {
       pattern: /(\.)[a-zA-Z_]\w*(?!\s*\()/,
       lookbehind: true,
     },
 
-    function: /[a-zA-Z_]\w*(?=\s*\()/,
-
-    'class-name': {
-      pattern: /(\bclass[ \t]+)[a-zA-Z_]\w*/,
-      lookbehind: true,
-    },
+    'class-name': /\b[A-Z]\w*/,
 
     keyword: /\b(?:class|new|static|this|if|else|function|return|returns|import|as|for|in|repeat|times|while|continue|break|and|or|not|is|greater|less|than)\b/,
     boolean: /\b(?:true|false)\b/,
