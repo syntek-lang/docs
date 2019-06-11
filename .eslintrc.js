@@ -1,3 +1,6 @@
 module.exports = {
-  extends: '@syntek/syntek/node',
-}
+  extends: [
+    '@syntek/syntek/node',
+    '@syntek/syntek/markdown',
+  ],
+};
