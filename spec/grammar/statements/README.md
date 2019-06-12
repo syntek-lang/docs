@@ -1,4 +1,4 @@
-# Statements
+# Statement
 
 Statements control the execution flow of a program.
 

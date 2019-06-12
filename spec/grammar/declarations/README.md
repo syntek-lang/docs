@@ -1,4 +1,4 @@
-# Declarations
+# Declaration
 
 A declaration introduces an entity into a program and includes an [identifier](/spec/grammar/lexical-grammar.html#identifiers) that can be used in a name to refer to this entity.
 
