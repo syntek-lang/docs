@@ -39,7 +39,6 @@ module.exports = {
             '/spec/grammar/expressions/wrapped-expression',
             '/spec/grammar/expressions/unary-expression',
             '/spec/grammar/expressions/binary-expression',
-            '/spec/grammar/expressions/logical-expression',
             '/spec/grammar/expressions/call-expression',
             '/spec/grammar/expressions/index-expression',
             '/spec/grammar/expressions/member-expression',

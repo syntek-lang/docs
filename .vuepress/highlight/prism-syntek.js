@@ -13,6 +13,11 @@ module.exports = (prism) => {
       greedy: true,
     },
 
+    'class-name': {
+      pattern: /\b[A-Z]\w*/,
+      greedy: true,
+    },
+
     function: {
       pattern: /[a-zA-Z_]\w*(?=\s*\()/,
       greedy: true,
@@ -22,8 +27,6 @@ module.exports = (prism) => {
       pattern: /(\.)[a-zA-Z_]\w*(?!\s*\()/,
       lookbehind: true,
     },
-
-    'class-name': /\b[A-Z]\w*/,
 
     keyword: /\b(?:class|new|static|this|extends|if|else|function|return|returns|import|as|for|in|repeat|times|while|continue|break|and|or|not|is|greater|less|than)\b/,
     boolean: /\b(?:true|false)\b/,
