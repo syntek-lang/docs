@@ -12,4 +12,5 @@ An expression is one of the following:
 - [New Expression](/spec/grammar/expressions/new-expression.html)
 - [Array Expression](/spec/grammar/expressions/array-expression.html)
 - [Object Expression](/spec/grammar/expressions/object-expression.html)
+- [Identifiers](/spec/grammar/lexical-grammar.html#identifiers)
 - [Literals](/spec/grammar/lexical-grammar.html#literals)
