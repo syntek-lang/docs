@@ -16,4 +16,4 @@ not true
 ```
 
 ## References
-- [Expression](/spec/grammar/expressions/)
+- [Expression](/spec/grammar/syntactic/expressions/)

@@ -52,6 +52,7 @@ import as
 for in repeat times while continue break
 and or not
 is greater less than
+any
 ```
 
 ## Operators and punctuation
@@ -121,4 +122,11 @@ A boolean can have 2 values. `true` and `false`.
 ```syntek
 true
 false
+```
+
+### Null
+Null is a special type that can be assigned to all types.
+
+```syntek
+null
 ```

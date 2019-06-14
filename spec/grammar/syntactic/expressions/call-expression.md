@@ -17,4 +17,4 @@ max((5 + 3) * 2, 9) + min(5, getValue())
 ```
 
 ## References
-- [Expression](/spec/grammar/expressions/)
+- [Expression](/spec/grammar/syntactic/expressions/)

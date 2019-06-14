@@ -18,9 +18,9 @@ repeat x times
 ```
 
 ## References
-- [Newline](/spec/grammar/lexical-grammar.html#newline)
-- [Indent](/spec/grammar/lexical-grammar.html#indent)
-- [Outdent](/spec/grammar/lexical-grammar.html#outdent)
-- [Declaration](/spec/grammar/declarations/)
-- [Expression](/spec/grammar/expressions/)
-- [Statement](/spec/grammar/statements/)
+- [Newline](/spec/grammar/lexical.html#newline)
+- [Indent](/spec/grammar/lexical.html#indent)
+- [Outdent](/spec/grammar/lexical.html#outdent)
+- [Declaration](/spec/grammar/syntactic/declarations/)
+- [Expression](/spec/grammar/syntactic/expressions/)
+- [Statement](/spec/grammar/syntactic/statements/)

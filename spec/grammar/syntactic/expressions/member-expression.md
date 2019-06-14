@@ -14,5 +14,5 @@ render().value
 ```
 
 ## References
-- [Identifier](/spec/grammar/lexical-grammar.html#identifiers)
-- [Expression](/spec/grammar/expressions/)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Expression](/spec/grammar/syntactic/expressions/)

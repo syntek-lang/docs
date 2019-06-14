@@ -20,55 +20,57 @@ module.exports = {
     '/spec/',
     {
       title: 'Grammar',
+      collapsable: false,
       children: [
-        '/spec/grammar/lexical-grammar',
+        '/spec/grammar/lexical',
         {
-          title: 'Declarations',
+          title: 'Syntactic Grammar',
           children: [
-            '/spec/grammar/declarations/',
-            '/spec/grammar/declarations/variable-declaration',
-            '/spec/grammar/declarations/function-declaration',
-            '/spec/grammar/declarations/class-declaration',
-            '/spec/grammar/declarations/interface-declaration',
-            '/spec/grammar/declarations/import-declaration',
-          ],
-        },
-        {
-          title: 'Expressions',
-          children: [
-            '/spec/grammar/expressions/',
-            '/spec/grammar/expressions/wrapped-expression',
-            '/spec/grammar/expressions/unary-expression',
-            '/spec/grammar/expressions/binary-expression',
-            '/spec/grammar/expressions/call-expression',
-            '/spec/grammar/expressions/index-expression',
-            '/spec/grammar/expressions/member-expression',
-            '/spec/grammar/expressions/new-expression',
-            '/spec/grammar/expressions/array-expression',
-            '/spec/grammar/expressions/object-expression',
-          ],
-        },
-        {
-          title: 'Statements',
-          children: [
-            '/spec/grammar/statements/',
-            '/spec/grammar/statements/if-statement',
-            '/spec/grammar/statements/switch-statement',
-            '/spec/grammar/statements/for-statement',
-            '/spec/grammar/statements/repeat-statement',
-            '/spec/grammar/statements/while-statement',
-            '/spec/grammar/statements/return-statement',
+            '/spec/grammar/syntactic/',
+            {
+              title: 'Declarations',
+              collapsable: false,
+              children: [
+                '/spec/grammar/syntactic/declarations/',
+                '/spec/grammar/syntactic/declarations/variable-declaration',
+                '/spec/grammar/syntactic/declarations/function-declaration',
+                '/spec/grammar/syntactic/declarations/class-declaration',
+                '/spec/grammar/syntactic/declarations/interface-declaration',
+                '/spec/grammar/syntactic/declarations/import-declaration',
+              ],
+            },
+            {
+              title: 'Expressions',
+              collapsable: false,
+              children: [
+                '/spec/grammar/syntactic/expressions/',
+                '/spec/grammar/syntactic/expressions/wrapped-expression',
+                '/spec/grammar/syntactic/expressions/unary-expression',
+                '/spec/grammar/syntactic/expressions/binary-expression',
+                '/spec/grammar/syntactic/expressions/call-expression',
+                '/spec/grammar/syntactic/expressions/index-expression',
+                '/spec/grammar/syntactic/expressions/member-expression',
+                '/spec/grammar/syntactic/expressions/new-expression',
+                '/spec/grammar/syntactic/expressions/array-expression',
+                '/spec/grammar/syntactic/expressions/object-expression',
+              ],
+            },
+            {
+              title: 'Statements',
+              collapsable: false,
+              children: [
+                '/spec/grammar/syntactic/statements/',
+                '/spec/grammar/syntactic/statements/if-statement',
+                '/spec/grammar/syntactic/statements/switch-statement',
+                '/spec/grammar/syntactic/statements/for-statement',
+                '/spec/grammar/syntactic/statements/repeat-statement',
+                '/spec/grammar/syntactic/statements/while-statement',
+                '/spec/grammar/syntactic/statements/return-statement',
+              ],
+            },
           ],
         },
       ],
     },
   ],
 };
-
-for (const group of Object.values(module.exports)) {
-  for (const section of group) {
-    if (!section.collapsable) {
-      section.collapsable = false;
-    }
-  }
-}

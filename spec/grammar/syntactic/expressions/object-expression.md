@@ -29,7 +29,7 @@ ObjectExpr = EmptyObject | FilledObject
 ```
 
 ## References
-- [Newline](/spec/grammar/lexical-grammar.html#newline)
-- [Indent](/spec/grammar/lexical-grammar.html#indent)
-- [Outdent](/spec/grammar/lexical-grammar.html#outdent)
-- [Declaration](/spec/grammar/declarations/)
+- [Newline](/spec/grammar/lexical.html#newline)
+- [Indent](/spec/grammar/lexical.html#indent)
+- [Outdent](/spec/grammar/lexical.html#outdent)
+- [Declaration](/spec/grammar/syntactic/declarations/)

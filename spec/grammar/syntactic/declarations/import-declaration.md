@@ -20,6 +20,6 @@ import './bar' as bar
 ```
 
 ## References
-- [Identifier](/spec/grammar/lexical-grammar.html#identifiers)
-- [Newline](/spec/grammar/lexical-grammar.html#newline)
-- [String](/spec/grammar/lexical-grammar.html#string)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Newline](/spec/grammar/lexical.html#newline)
+- [String](/spec/grammar/lexical.html#string)

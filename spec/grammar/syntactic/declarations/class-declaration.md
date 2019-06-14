@@ -37,8 +37,8 @@ class Goldfish extends Fish implements Pet
 ```
 
 ## References
-- [Identifier](/spec/grammar/lexical-grammar.html#identifiers)
-- [Newline](/spec/grammar/lexical-grammar.html#newline)
-- [Indent](/spec/grammar/lexical-grammar.html#indent)
-- [Outdent](/spec/grammar/lexical-grammar.html#outdent)
-- [Declaration](/spec/grammar/declarations/)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Newline](/spec/grammar/lexical.html#newline)
+- [Indent](/spec/grammar/lexical.html#indent)
+- [Outdent](/spec/grammar/lexical.html#outdent)
+- [Declaration](/spec/grammar/syntactic/declarations/)

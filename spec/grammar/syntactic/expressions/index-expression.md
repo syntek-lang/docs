@@ -15,4 +15,4 @@ getArray()[getIndex()]
 ```
 
 ## References
-- [Expression](/spec/grammar/expressions/)
+- [Expression](/spec/grammar/syntactic/expressions/)

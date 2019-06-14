@@ -36,7 +36,7 @@ ArrayExpr = SingleLineArray | MultiLineArray
 ```
 
 ## References
-- [Newline](/spec/grammar/lexical-grammar.html#newline)
-- [Indent](/spec/grammar/lexical-grammar.html#indent)
-- [Outdent](/spec/grammar/lexical-grammar.html#outdent)
-- [Expression](/spec/grammar/expressions/)
+- [Newline](/spec/grammar/lexical.html#newline)
+- [Indent](/spec/grammar/lexical.html#indent)
+- [Outdent](/spec/grammar/lexical.html#outdent)
+- [Expression](/spec/grammar/syntactic/expressions/)

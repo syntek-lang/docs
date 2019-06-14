@@ -15,5 +15,5 @@ return x
 ```
 
 ## References
-- [Newline](/spec/grammar/lexical-grammar.html#newline)
-- [Expression](/spec/grammar/expressions/)
+- [Newline](/spec/grammar/lexical.html#newline)
+- [Expression](/spec/grammar/syntactic/expressions/)
