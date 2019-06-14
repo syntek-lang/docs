@@ -22,7 +22,7 @@ function add(a, b)
 	return a + b
 
 function multiply(Number a, Number b)
-	return a + b
+	return a * b
 
 function pow(a, b) returns Number
 	return a ^ b

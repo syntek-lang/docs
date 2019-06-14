@@ -6,4 +6,5 @@ A declared entity is one of the following:
 - [Variable Declaration](/spec/grammar/declarations/variable-declaration.html)
 - [Function Declaration](/spec/grammar/declarations/function-declaration.html)
 - [Class Declaration](/spec/grammar/declarations/class-declaration.html)
+- [Interface Declaration](/spec/grammar/declarations/interface-declaration.html)
 - [Import Declaration](/spec/grammar/declarations/import-declaration.html)

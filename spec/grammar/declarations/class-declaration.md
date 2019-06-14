@@ -6,8 +6,9 @@ A class declaration stores a class under an identifier. The identifier can be us
 ```grammar
 Block = Indent ( 'static'? Declaration )+ Outdent
 
-Extends = 'extends' Identifier ( ',' Identifier )*
-ClassDecl = 'class' Identifier Extends? Newline Block
+Extends = 'extends' Identifier
+Implements = 'implements' Identifier ( ',' Identifier )*
+ClassDecl = 'class' Identifier Extends? Implements? Newline Block
 ```
 
 ## Example
@@ -22,9 +23,17 @@ class Child extends MyClass
 	static Number x = 5
 	static Number y = 15
 
-class UltraClass extends Child, AnotherClass
-	function UltraClass()
-		print('New instance of UltraClass!')
+class Dog implements Pet
+	function feed()
+		print('Feeding the dog')
+
+class Horse implements Animal, Rideable
+	function ride()
+		print('Riding the horse')
+
+class Goldfish extends Fish implements Pet
+	function feed()
+		print('Feeding the goldfish')
 ```
 
 ## References

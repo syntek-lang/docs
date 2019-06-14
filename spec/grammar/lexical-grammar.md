@@ -44,7 +44,7 @@ HelloWorld
 
 The following keywords are reserved and cannot be used as identifiers:
 ```syntek
-class new static this extends
+class new static this extends interface implements
 if else
 function return returns
 import as
