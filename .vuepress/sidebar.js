@@ -52,7 +52,6 @@ module.exports = {
           title: 'Statements',
           children: [
             '/spec/grammar/statements/',
-            '/spec/grammar/statements/expression-statement',
             '/spec/grammar/statements/if-statement',
             '/spec/grammar/statements/switch-statement',
             '/spec/grammar/statements/for-statement',

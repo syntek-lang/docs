@@ -46,6 +46,7 @@ The following keywords are reserved and cannot be used as identifiers:
 ```syntek
 class new static this extends interface implements
 if else
+switch case fallthrough
 function return returns
 import as
 for in repeat times while continue break
