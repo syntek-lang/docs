@@ -4,7 +4,6 @@ A variable declaration stores a value under the given identifier. The identifier
 
 ## Structure
 ```grammar
-Type = Identifier ( '[]' )*
 VarDecl = Type? Identifier '=' Expression Newline
 ```
 
@@ -17,6 +16,7 @@ Number[][] matrix = [[1, 2], [3, 4]]
 ```
 
 ## References
-- [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Type](/spec/grammar/syntactic/#type)
 - [Newline](/spec/grammar/lexical.html#newline)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Expression](/spec/grammar/syntactic/expressions/)

@@ -4,16 +4,9 @@ An interface declaration stores an interface under an identifier. The identifier
 
 ## Structure
 ```grammar
-Type = Identifier ( '[]' )*
-Param = Type? Identifier
-ParamList = '(' ( Param ( ',' Param )* )? ')'
-ReturnValue = 'returns' Type
-
-Method = 'function' Identifier ParamList ReturnValue? Newline
-Body = Indent Method+ Outdent
-
+InterfaceBody = Indent FuncSig+ Outdent
 Extends = 'extends' Identifier ( ',' Identifier )*
-InterfaceDecl = 'interface' Identifier Extends? Newline Body
+InterfaceDecl = 'interface' Identifier Extends? Newline InterfaceBody
 ```
 
 ## Example
@@ -30,6 +23,7 @@ interface Human
 ```
 
 ## References
+- [Function Signature](/spec/grammar/syntactic/#function-signature)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Newline](/spec/grammar/lexical.html#newline)
 - [Indent](/spec/grammar/lexical.html#indent)

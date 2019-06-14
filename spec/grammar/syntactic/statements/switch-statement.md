@@ -4,7 +4,6 @@ Switch statements provide multi-way execution.
 
 ## Structure
 ```grammar
-Block = Indent ( Expression | Declaration | Statement )+ Outdent
 Case = 'case' Expression ( ',' Expression )* Newline Block
 SwitchStmt = 'switch' Expression Newline Indent Case+ Outdent
 ```
@@ -30,9 +29,8 @@ switch y
 ```
 
 ## References
-- [Newline](/spec/grammar/lexical.html#newline)
+- [Block](/spec/grammar/syntactic/#block)
 - [Indent](/spec/grammar/lexical.html#indent)
 - [Outdent](/spec/grammar/lexical.html#outdent)
-- [Declaration](/spec/grammar/syntactic/declarations/)
+- [Newline](/spec/grammar/lexical.html#newline)
 - [Expression](/spec/grammar/syntactic/expressions/)
-- [Statement](/spec/grammar/syntactic/statements/)

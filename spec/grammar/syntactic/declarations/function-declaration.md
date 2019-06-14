@@ -4,13 +4,7 @@ A function declaration stores a function under an identifier. The identifier can
 
 ## Structure
 ```grammar
-Block = Indent ( Expression | Declaration | Statement )+ Outdent
-
-Type = Identifier ( '[]' )*
-Param = Type? Identifier
-ParamList = '(' ( Param ( ',' Param )* )? ')'
-ReturnValue = 'returns' Type
-FuncDecl = 'function' Identifier ParamList ReturnValue? Newline Block
+FuncDecl = FuncSig Block
 ```
 
 ## Example
@@ -33,10 +27,5 @@ function printNumbers(Number[] numbers)
 ```
 
 ## References
-- [Identifier](/spec/grammar/lexical.html#identifiers)
-- [Newline](/spec/grammar/lexical.html#newline)
-- [Indent](/spec/grammar/lexical.html#indent)
-- [Outdent](/spec/grammar/lexical.html#outdent)
-- [Declaration](/spec/grammar/syntactic/declarations/)
-- [Expression](/spec/grammar/syntactic/expressions/)
-- [Statement](/spec/grammar/syntactic/statements/)
+- [Block](/spec/grammar/syntactic/#block)
+- [Function Signature](/spec/grammar/syntactic/#function-signature)

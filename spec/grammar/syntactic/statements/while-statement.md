@@ -4,7 +4,6 @@ While statements repeatedly execute a block until the given condition does not r
 
 ## Structure
 ```grammar
-Block = Indent ( Expression | Declaration | Statement )+ Outdent
 WhileStmt = 'while' Expression Newline Block
 ```
 
@@ -18,9 +17,6 @@ while x is less than 10
 ```
 
 ## References
+- [Block](/spec/grammar/syntactic/#block)
 - [Newline](/spec/grammar/lexical.html#newline)
-- [Indent](/spec/grammar/lexical.html#indent)
-- [Outdent](/spec/grammar/lexical.html#outdent)
-- [Declaration](/spec/grammar/syntactic/declarations/)
 - [Expression](/spec/grammar/syntactic/expressions/)
-- [Statement](/spec/grammar/syntactic/statements/)

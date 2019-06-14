@@ -4,8 +4,6 @@ For statements iterate over an array and repeatedly execute a block.
 
 ## Structure
 ```grammar
-Type = Identifier ( '[]' )*
-Block = Indent ( Expression | Declaration | Statement )+ Outdent
 ForStmt = 'for' Type? Identifier 'in' Expression Newline Block
 ```
 
@@ -19,10 +17,8 @@ for Number y in [1, 2, 3]
 ```
 
 ## References
-- [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Type](/spec/grammar/syntactic/#type)
+- [Block](/spec/grammar/syntactic/#block)
 - [Newline](/spec/grammar/lexical.html#newline)
-- [Indent](/spec/grammar/lexical.html#indent)
-- [Outdent](/spec/grammar/lexical.html#outdent)
-- [Declaration](/spec/grammar/syntactic/declarations/)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Expression](/spec/grammar/syntactic/expressions/)
-- [Statement](/spec/grammar/syntactic/statements/)
