@@ -3,6 +3,7 @@
 An interface declaration stores an interface under an identifier. The identifier can be used to reference the interface.
 
 ## Structure
+
 ```grammar
 InterfaceBody = Indent FuncSig+ Outdent
 Extends = 'extends' Identifier ( ',' Identifier )*
@@ -10,6 +11,7 @@ InterfaceDecl = 'interface' Identifier Extends? Newline InterfaceBody
 ```
 
 ## Example
+
 ```syntek
 interface Animal
 	function move(steps)
@@ -23,6 +25,7 @@ interface Human
 ```
 
 ## References
+
 - [Function Signature](/spec/grammar/syntactic/#function-signature)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Newline](/spec/grammar/lexical.html#newline)

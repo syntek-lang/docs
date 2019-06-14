@@ -3,11 +3,13 @@
 A function declaration stores a function under an identifier. The identifier can be used to call the function.
 
 ## Structure
+
 ```grammar
 FuncDecl = FuncSig Block
 ```
 
 ## Example
+
 ```syntek
 function main()
 	print('Hello, World!')
@@ -27,5 +29,6 @@ function printNumbers(Number[] numbers)
 ```
 
 ## References
+
 - [Block](/spec/grammar/syntactic/#block)
 - [Function Signature](/spec/grammar/syntactic/#function-signature)

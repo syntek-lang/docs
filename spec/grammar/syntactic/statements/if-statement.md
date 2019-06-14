@@ -3,12 +3,14 @@
 If statements control the execution of code through a condition.
 
 ## Structure
+
 ```grammar
 IfStmt = 'if' Expression Newline Block ElseStmt?
 ElseStmt = 'else' ( IfStmt | ( Newline Block ) )
 ```
 
 ## Example
+
 ```syntek
 if x is 5
 	print('x is 5')
@@ -27,6 +29,7 @@ else
 ```
 
 ## References
+
 - [Block](/spec/grammar/syntactic/#block)
 - [Newline](/spec/grammar/lexical.html#newline)
 - [Expression](/spec/grammar/syntactic/expressions/)

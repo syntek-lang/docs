@@ -3,6 +3,7 @@
 Statements control the execution flow of a program.
 
 A statement is one of the following:
+
 - [If Statement](/spec/grammar/syntactic/statements/if-statement.html)
 - [Switch Statement](/spec/grammar/syntactic/statements/switch-statement.html)
 - [For Statement](/spec/grammar/syntactic/statements/for-statement.html)
@@ -11,6 +12,7 @@ A statement is one of the following:
 - [Return Statement](/spec/grammar/syntactic/statements/return-statement.html)
 
 Additionally the following keywords are also seen as a statement:
+
 ```syntek
 break continue fallthrough
 ```

@@ -3,6 +3,7 @@
 An object expression creates a new object with the given properties.
 
 ## Structure
+
 ```grammar
 EmptyObject = '{}'
 FilledObject = '{' Newline Indent Declaration+ Newline Outdent '}'
@@ -10,6 +11,7 @@ ObjectExpr = EmptyObject | FilledObject
 ```
 
 ## Example
+
 ```syntek
 {}
 
@@ -29,6 +31,7 @@ ObjectExpr = EmptyObject | FilledObject
 ```
 
 ## References
+
 - [Newline](/spec/grammar/lexical.html#newline)
 - [Indent](/spec/grammar/lexical.html#indent)
 - [Outdent](/spec/grammar/lexical.html#outdent)

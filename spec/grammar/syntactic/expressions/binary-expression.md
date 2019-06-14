@@ -3,6 +3,7 @@
 A binary expression is an operation with a left-hand and right-hand argument.
 
 ## Structure
+
 ```grammar
 ComparisonOp = 'is' | 'is not' | 'is less than' | 'is greater than'
 ArithmeticOp = '+' | '-' | '*' | '/' | '%' | '^'
@@ -13,6 +14,7 @@ BinaryExpr = Expression BinaryOp Expression
 ```
 
 ## Example
+
 ```syntek
 5 + 10
 true or false
@@ -22,4 +24,5 @@ true and fn()
 ```
 
 ## References
+
 - [Expression](/spec/grammar/syntactic/expressions/)

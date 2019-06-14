@@ -3,11 +3,13 @@
 A wrapped expression is an expression surrounded by parentheses.
 
 ## Structure
+
 ```grammar
 WrappedExpr = '(' Expression ')'
 ```
 
 ## Example
+
 ```syntek
 (5)
 (1 + 9) * 3
@@ -15,4 +17,5 @@ WrappedExpr = '(' Expression ')'
 ```
 
 ## References
+
 - [Expression](/spec/grammar/syntactic/expressions/)

@@ -3,6 +3,7 @@
 A class declaration stores a class under an identifier. The identifier can be used to create an instance of the class.
 
 ## Structure
+
 ```grammar
 Block = Indent ( 'static'? Declaration )+ Outdent
 
@@ -12,6 +13,7 @@ ClassDecl = 'class' Identifier Extends? Implements? Newline Block
 ```
 
 ## Example
+
 ```syntek
 class MyClass
 	String language = 'Syntek'
@@ -37,6 +39,7 @@ class Goldfish extends Fish implements Pet
 ```
 
 ## References
+
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Newline](/spec/grammar/lexical.html#newline)
 - [Indent](/spec/grammar/lexical.html#indent)

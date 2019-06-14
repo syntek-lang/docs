@@ -7,21 +7,27 @@ This chapter describes the lexical grammar of Syntek.
 Whitespace is all the empty space inside a Syntek program, and the tokens that get ignored by the compiler.
 
 ### Newline
+
 A newline is indicated by a `LF` or `CRLF` character.
 
 ### Indent
+
 An indent token is added when the current line starts with more tabs than the previous line.
 
 ### Outdent
+
 An outdent token is added when the current line starts with less tabs than the previous line.
 
 ### Comment
+
 A comment starts with `#` and ends on the first newline character. To allow a line to contain a statement and a comment, the newline character is not consumed by the comment.
 
 ### Empty lines
+
 Empty lines are lines that do not contain any characters or only consist of whitespace. Empty lines are ignored by the compiler and do not add an indent or outdent token.
 
 ### Spaces and tabs
+
 Space and tab characters are ignored by the compiler.
 
 ## Identifiers
@@ -43,6 +49,7 @@ HelloWorld
 ## Keywords
 
 The following keywords are reserved and cannot be used as identifiers:
+
 ```syntek
 class new static this extends interface implements
 if else
@@ -58,6 +65,7 @@ any
 ## Operators and punctuation
 
 The following characters represent operators and punctuation:
+
 ```syntek
 + - * / % ^
 . , [ ] ( ) { }
@@ -67,6 +75,7 @@ The following characters represent operators and punctuation:
 ## Literals
 
 ### Number
+
 Number represents any integer and floating point value, stored according to the IEEE 754 standard. There are no explicit `int` and `float` types.
 
 A number is a sequence of one or more digits, optionally followed by a `.` and one or more digits.
@@ -94,9 +103,11 @@ _125
 ```
 
 ### String
+
 A string literal consists of zero or more characters enclosed in single quotes. Strings can only span over a single line.
 
 After a backslash, certain single-character escapes represent special values:
+
 - `\'` single quote
 - `\\` backslash
 - `\n` newline
@@ -117,6 +128,7 @@ After a backslash, certain single-character escapes represent special values:
 ```
 
 ### Boolean
+
 A boolean can have 2 values. `true` and `false`.
 
 ```syntek
@@ -125,6 +137,7 @@ false
 ```
 
 ### Null
+
 Null is a special type that can be assigned to all types.
 
 ```syntek

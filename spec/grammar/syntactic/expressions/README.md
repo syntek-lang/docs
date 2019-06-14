@@ -3,6 +3,7 @@
 An expression specifies the computation of a value by applying operators and functions to operands.
 
 An expression is one of the following:
+
 - [Wrapped Expression](/spec/grammar/syntactic/expressions/wrapped-expression.html)
 - [Unary Expression](/spec/grammar/syntactic/expressions/unary-expression.html)
 - [Binary Expression](/spec/grammar/syntactic/expressions/binary-expression.html)

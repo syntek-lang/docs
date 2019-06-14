@@ -3,6 +3,7 @@
 An array expression creates a new array with the given elements.
 
 ## Structure
+
 ```grammar
 SingleLineElements = ( Expression ( ',' Expression )* )?
 SingleLineArray = '[' SingleLineElements ']'
@@ -14,6 +15,7 @@ ArrayExpr = SingleLineArray | MultiLineArray
 ```
 
 ## Example
+
 ```syntek
 []
 [1, 2, 3]
@@ -36,6 +38,7 @@ ArrayExpr = SingleLineArray | MultiLineArray
 ```
 
 ## References
+
 - [Newline](/spec/grammar/lexical.html#newline)
 - [Indent](/spec/grammar/lexical.html#indent)
 - [Outdent](/spec/grammar/lexical.html#outdent)

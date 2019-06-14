@@ -5,7 +5,9 @@
     "test": "npm run lint && npm run build",
     "dev": "vuepress dev",
     "build": "vuepress build",
-    "lint": "eslint . --ext .js,.md"
+    "lint": "npm run lint:code && npm run lint:md",
+    "lint:code": "eslint . --ext .js,.md",
+    "lint:md": "markdownlint spec/**/*.md"
   },
   "dependencies": {
     "vuepress": "^1.0.1"
@@ -20,6 +22,7 @@
     "eslint-plugin-eslint-comments": "^3.1.1",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsdoc": "^8.0.1",
-    "eslint-plugin-markdown": "^1.0.0"
+    "eslint-plugin-markdown": "^1.0.0",
+    "markdownlint-cli": "^0.17.0"
   }
 }

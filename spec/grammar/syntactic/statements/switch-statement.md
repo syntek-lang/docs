@@ -3,12 +3,14 @@
 Switch statements provide multi-way execution.
 
 ## Structure
+
 ```grammar
 Case = 'case' Expression ( ',' Expression )* Newline Block
 SwitchStmt = 'switch' Expression Newline Indent Case+ Outdent
 ```
 
 ## Example
+
 ```syntek
 switch x
 	case 5
@@ -29,6 +31,7 @@ switch y
 ```
 
 ## References
+
 - [Block](/spec/grammar/syntactic/#block)
 - [Indent](/spec/grammar/lexical.html#indent)
 - [Outdent](/spec/grammar/lexical.html#outdent)
