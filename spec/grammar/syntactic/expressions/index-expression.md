@@ -1,6 +1,6 @@
 # Index Expression
 
-An index expression retrieves the given index from the identifier.
+An index expression retrieves the given index from the identifier. The parameter of an index expression must resolve to a number.
 
 ## Structure
 

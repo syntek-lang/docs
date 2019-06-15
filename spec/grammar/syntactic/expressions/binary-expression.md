@@ -1,6 +1,18 @@
 # Binary Expression
 
-A binary expression is an operation with a left-hand and right-hand argument.
+A binary expression is an operation with a left-hand and right-hand argument. There are 3 types of binary expressions:
+
+- Comparison
+- Arithmetic
+- Logical
+
+The left- and right-hand side of `is` and `is not` must be a number, boolean or null. The left- and right-hand side of `is less than` and `is greater than` must be a number.
+
+The left- and right-hand side of an arithmetic binary expression must be a number.
+
+The left- and right-hand side of a logical binary expression must be a boolean or null.
+
+The logical operators short-circuit. If the left-hand side of `and` is false, the right hand side is not evaluated. If the left-hand side of `or` is true, the right hand side is not evaluated.
 
 ## Structure
 

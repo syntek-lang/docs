@@ -1,6 +1,12 @@
 # Unary Expression
 
-A unary expression is an operation with only one operand.
+A unary expression is an operation with only one operand. There are 3 types of unary expressions:
+
+- Plus
+- Negation
+- Not
+
+The right hand side of plus and negation must always be a number. The right hand side of not must always be a boolean.
 
 ## Structure
 
