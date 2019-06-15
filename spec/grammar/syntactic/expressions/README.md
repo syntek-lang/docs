@@ -15,3 +15,9 @@ An expression is one of the following:
 - [Object Expression](/spec/grammar/syntactic/expressions/object-expression.html)
 - [Identifiers](/spec/grammar/lexical.html#identifiers)
 - [Literals](/spec/grammar/lexical.html#literals)
+
+Additionally the following keywords are also seen as an expression:
+
+```syntek
+this super
+```

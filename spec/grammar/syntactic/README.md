@@ -65,7 +65,7 @@ This chapter needs to reuse a lot of tokens. The most common tokens are listed o
 ### Type
 
 ```grammar
-Type = Identifier ( '[]' )*
+Type = ( Identifier | 'any' ) '[]'*
 ```
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)

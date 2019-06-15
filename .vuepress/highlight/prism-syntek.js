@@ -28,7 +28,7 @@ module.exports = (prism) => {
       lookbehind: true,
     },
 
-    keyword: /\b(?:class|new|static|this|extends|interface|implements|if|else|switch|case|fallthrough|function|return|returns|import|as|for|in|repeat|times|while|continue|break|and|or|not|is|greater|less|than|any|null)\b/,
+    keyword: /\b(?:class|new|static|this|super|extends|interface|implements|if|else|switch|case|fallthrough|function|return|returns|import|as|for|in|repeat|times|while|continue|break|and|or|not|is|greater|less|than|any|null)\b/,
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: /[+\-*/%^=]/,

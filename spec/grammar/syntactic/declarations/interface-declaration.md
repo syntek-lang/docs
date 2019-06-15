@@ -2,6 +2,10 @@
 
 An interface declaration stores an interface under an identifier. The identifier can be used to reference the interface.
 
+An interface body must contain one or more function signatures.
+
+An interface can optionally extend one or more interfaces.
+
 ## Structure
 
 ```grammar
