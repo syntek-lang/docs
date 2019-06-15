@@ -10,7 +10,7 @@ An interface can optionally extend one or more interfaces.
 
 ```grammar
 InterfaceBody = Indent FuncSig+ Outdent
-Extends = 'extends' Identifier ( ',' Identifier )*
+Extends = 'extends' VarLoc ( ',' VarLoc )*
 InterfaceDecl = 'interface' Identifier Extends? Newline InterfaceBody
 ```
 
@@ -31,6 +31,7 @@ interface Human
 ## References
 
 - [Function Signature](/spec/grammar/syntactic/#function-signature)
+- [Variable Location](/spec/grammar/syntactic/#variable-location)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Newline](/spec/grammar/lexical.html#newline)
 - [Indent](/spec/grammar/lexical.html#indent)

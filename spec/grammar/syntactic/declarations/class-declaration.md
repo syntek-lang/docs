@@ -15,8 +15,8 @@ When a class implements an interface it must implement all functions declared on
 ```grammar
 Block = Indent ( 'static'? Declaration )+ Outdent
 
-Extends = 'extends' Identifier
-Implements = 'implements' Identifier ( ',' Identifier )*
+Extends = 'extends' VarLoc
+Implements = 'implements' VarLoc ( ',' VarLoc )*
 ClassDecl = 'class' Identifier Extends? Implements? Newline Block
 ```
 
@@ -53,3 +53,4 @@ class Goldfish extends Fish implements Pet
 - [Indent](/spec/grammar/lexical.html#indent)
 - [Outdent](/spec/grammar/lexical.html#outdent)
 - [Declaration](/spec/grammar/syntactic/declarations/)
+- [Variable Location](/spec/grammar/syntactic/#variable-location)

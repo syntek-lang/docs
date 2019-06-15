@@ -62,13 +62,22 @@ Block = ( Declaration | Expression | Statement )+
 
 This chapter needs to reuse a lot of tokens. The most common tokens are listed on this page. These tokens are building blocks for other tokens and don't have much meaning on their own.
 
-### Type
+### Variable Location
 
 ```grammar
-Type = ( Identifier | 'any' ) '[]'*
+VarLoc = ( Identifier | MemberExpression )
 ```
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Member Expression](/spec/grammar/syntactic/expressions/member-expression.html)
+
+### Type
+
+```grammar
+Type = ( VarLoc | 'any' ) '[]'*
+```
+
+- [Variable Location](/spec/grammar/syntactic/#variable-location)
 
 ### Block
 
