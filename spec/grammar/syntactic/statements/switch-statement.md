@@ -1,6 +1,10 @@
 # Switch Statement
 
-Switch statements provide multi-way execution.
+Switch statements provide multi-way execution. The expression of a switch statement must resolve to a number, boolean, string, or null.
+
+If a case matches the expression the block is executed. Blocks implicitely break, but breaking explicitely is possible.
+
+You can use `fallthrough` to explicitely fallthrough to the next case block. The condition of the case is not evaluated on fallthrough.
 
 ## Structure
 
@@ -23,6 +27,7 @@ switch x
 switch y
 	case 5, 6
 		print('y is 5 or 6')
+		break
 	case get7()
 		print('x is 7')
 		fallthrough

@@ -2,6 +2,10 @@
 
 If statements control the execution of code through a condition.
 
+If the expression evaluates to true the if branch is executed, otherwise the else branch is executed when present. The else keyword can be followed with another if, also known as an `else if`.
+
+If the expression does not resolve to a boolean an error must be thrown.
+
 ## Structure
 
 ```grammar

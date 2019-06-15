@@ -2,6 +2,8 @@
 
 Repeat statements repeatedly execute a block.
 
+The expression is evaluated once at the start of the repeat statement. The expression must resolve to a number.
+
 ## Structure
 
 ```grammar

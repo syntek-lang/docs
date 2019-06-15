@@ -1,6 +1,8 @@
 # For Statement
 
-For statements iterate over an array and repeatedly execute a block.
+For statements iterate over an array and repeatedly execute a block. Each iteration the for loop picks the next entry in the array.
+
+The iterator expression must resolve to an array.
 
 ## Structure
 
