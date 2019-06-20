@@ -4,11 +4,11 @@ There are 3 different scopes in Syntek that define where a variable can be acces
 
 [[toc]]
 
-## Global Scope
+## File Scope
 
-Variables declared outside of a function, class, and interface are global scope. Variables that are in global scope are accessible in the entire file.
+Variables declared outside of a function, class, and interface are file scope. Variables that are in file scope are accessible in the entire file.
 
-Variables declared inside an if, loop, or switch statement take the closest available scope. In the following example this means that x is declared in the global scope of the program and is accessible outside of the if statement.
+Variables declared inside an if, loop, or switch statement take the closest available scope. In the following example this means that x is declared in the file scope of the program and is accessible outside of the if statement.
 
 ```syntek
 if true
@@ -17,7 +17,7 @@ if true
 print(x) # x is accessible here
 ```
 
-Variables declared in the global scope, excluding imports, are automatically exported.
+Variables declared in the file scope, excluding imports, are automatically exported.
 
 ## Function Scope
 
