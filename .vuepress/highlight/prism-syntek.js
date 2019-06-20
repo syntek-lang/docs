@@ -1,4 +1,8 @@
 module.exports = (prism) => {
+  function keywordsToRegex(keywords) {
+    return new RegExp(`\\b(?:${keywords.join('|')})\\b`);
+  }
+
   // eslint-disable-next-line no-param-reassign
   prism.languages.syntek = {
     comment: /#.*/,
@@ -23,12 +27,23 @@ module.exports = (prism) => {
       greedy: true,
     },
 
+    keyword: keywordsToRegex([
+      'class', 'new', 'static', 'this', 'super', 'extends',
+      'if', 'else',
+      'switch', 'case', 'fallthrough',
+      'function', 'return', 'returns',
+      'import', 'as',
+      'for', 'in', 'repeat', 'times', 'while', 'continue', 'break',
+      'and', 'or', 'not',
+      'is', 'greater', 'less', 'than',
+      'any', 'null',
+    ]),
+
     property: {
       pattern: /(\.)[a-zA-Z_]\w*(?!\s*\()/,
       lookbehind: true,
     },
 
-    keyword: /\b(?:class|new|static|this|super|extends|interface|implements|if|else|switch|case|fallthrough|function|return|returns|import|as|for|in|repeat|times|while|continue|break|and|or|not|is|greater|less|than|any|null)\b/,
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: /[+\-*/%^=]/,

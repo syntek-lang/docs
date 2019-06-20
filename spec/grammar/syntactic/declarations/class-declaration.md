@@ -1,6 +1,6 @@
 # Class Declaration
 
-A class declaration stores a class under an identifier. The identifier can be used to create an instance of the class. A class can optionally extend one class and implement multiple interfaces.
+A class declaration stores a class under an identifier. The identifier can be used to create an instance of the class. A class can optionally extend multiple class.
 
 The class body may only contain variable and function declarations. Declarations can be prefixed with `static` to declare them as static.
 
@@ -8,16 +8,15 @@ When a class is instantiated using the `new` keyword the constructor of the clas
 
 `this` is not available inside static functions and when declaring a static variable. A static variable can reference a different static variable by accessing the property through the class name. Inside non-static functions or when declaring a non-static variable different non-statics can be accessed by using `this`.
 
-When a class implements an interface it must implement all functions declared on the interface.
+A class can extend multiple other classes. If there is a naming collision with methods from the classes that are being extended then the class needs to override the method. A naming collision is 2 non-static methods having the same name on the same level of extending.
 
 ## Structure
 
 ```grammar
 Block = Indent ( 'static'? Declaration )+ Outdent
 
-Extends = 'extends' VarLoc
-Implements = 'implements' VarLoc ( ',' VarLoc )*
-ClassDecl = 'class' Identifier Extends? Implements? Newline Block
+Extends = 'extends' VarLoc ( ',' VarLoc )*
+ClassDecl = 'class' Identifier Extends? Newline Block
 ```
 
 ## Example
@@ -33,17 +32,25 @@ class Child extends MyClass
 	static Number x = 5
 	static Number y = 15
 
-class Dog implements Pet
-	function feed()
-		print('Feeding the dog')
-
-class Horse implements Animal, Rideable
+class Horse extends Animal, Rideable
 	function ride()
 		print('Riding the horse')
 
-class Goldfish extends Fish implements Pet
+class Goldfish extends Fish, Pet
 	function feed()
 		print('Feeding the goldfish')
+
+class A
+	function toString()
+		return 'Class A'
+
+class B
+	function toString()
+		return 'Class B'
+
+class C extends A, B
+	function toString() # override because of naming collision
+		return A.super.toString() # this calls toString on A
 ```
 
 ## References

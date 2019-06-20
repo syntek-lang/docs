@@ -35,7 +35,6 @@ module.exports = {
                 '/spec/grammar/syntactic/declarations/variable-declaration',
                 '/spec/grammar/syntactic/declarations/function-declaration',
                 '/spec/grammar/syntactic/declarations/class-declaration',
-                '/spec/grammar/syntactic/declarations/interface-declaration',
                 '/spec/grammar/syntactic/declarations/import-declaration',
               ],
             },
