@@ -55,6 +55,7 @@ class new static this super extends
 if else
 switch case fallthrough
 function return returns
+try catch throw
 import as
 for in repeat times while continue break
 and or not
