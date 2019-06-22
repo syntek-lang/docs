@@ -75,5 +75,6 @@ module.exports = {
       ],
     },
     '/spec/scopes',
+    '/spec/modules',
   ],
 };
