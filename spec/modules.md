@@ -18,4 +18,4 @@ Data modules are configuration files, such as YAML and JSON. The modules are aut
 
 ## Text Module
 
-A text module is a files that is not a Syntek, native, or data module. This file is read as text and returned as a string.
+A text module is a file that is not a Syntek, native, or data module. This file is read as text and returned as a string.
