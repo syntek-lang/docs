@@ -77,5 +77,6 @@ module.exports = {
     '/spec/scopes',
     '/spec/modules',
     '/spec/linting',
+    '/spec/i18n',
   ],
 };
