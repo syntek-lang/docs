@@ -50,6 +50,7 @@ module.exports = {
                 '/spec/grammar/syntactic/expressions/index-expression',
                 '/spec/grammar/syntactic/expressions/member-expression',
                 '/spec/grammar/syntactic/expressions/new-expression',
+                '/spec/grammar/syntactic/expressions/await-expression',
                 '/spec/grammar/syntactic/expressions/array-expression',
                 '/spec/grammar/syntactic/expressions/object-expression',
               ],

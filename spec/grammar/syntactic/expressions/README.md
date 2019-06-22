@@ -11,6 +11,7 @@ An expression is one of the following:
 - [Index Expression](/spec/grammar/syntactic/expressions/index-expression.html)
 - [Member Expression](/spec/grammar/syntactic/expressions/member-expression.html)
 - [New Expression](/spec/grammar/syntactic/expressions/new-expression.html)
+- [Await Expression](/spec/grammar/syntactic/expressions/await-expression.html)
 - [Array Expression](/spec/grammar/syntactic/expressions/array-expression.html)
 - [Object Expression](/spec/grammar/syntactic/expressions/object-expression.html)
 - [Identifiers](/spec/grammar/lexical.html#identifiers)
