@@ -10,6 +10,7 @@
     "lint:md": "markdownlint spec/**"
   },
   "dependencies": {
+    "markdown-it-imsize": "^2.0.1",
     "vuepress": "^1.0.1"
   },
   "devDependencies": {

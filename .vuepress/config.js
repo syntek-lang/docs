@@ -1,16 +1,17 @@
-const sidebar = require('./sidebar.js');
-const prismSyntek = require('./highlight/prism-syntek.js');
-const prismGrammar = require('./highlight/prism-grammar.js');
+/* eslint-disable global-require */
 
 const TITLE = 'Syntek Documentation';
 const DESCRIPTION = 'Documentation of the Syntek programming language';
 
 module.exports = {
   markdown: {
-    extendMarkdown() {
+    extendMarkdown(md) {
       // Load Syntek and grammar highlighting mode
-      prismSyntek(this.Prism);
-      prismGrammar(this.Prism);
+      require('./highlight/prism-syntek.js')(this.Prism);
+      require('./highlight/prism-grammar.js')(this.Prism);
+
+      // Add markdown plugins
+      md.use(require('markdown-it-imsize'));
     },
   },
 
@@ -25,6 +26,8 @@ module.exports = {
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:url', content: 'https://docs.syntek.dev/' }],
     ['meta', { name: 'og:locale', content: 'en_US' }],
+
+    ['link', { rel: 'stylesheet', href: '/css/global.css' }],
   ],
 
   themeConfig: {
@@ -41,7 +44,7 @@ module.exports = {
       { text: 'Site', link: 'https://syntek.dev/' },
     ],
 
-    sidebar,
+    sidebar: require('./sidebar.js'),
   },
 
   plugins: [
