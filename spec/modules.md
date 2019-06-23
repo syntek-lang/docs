@@ -6,7 +6,7 @@ There are 4 types of modules in Syntek.
 
 ## Syntek Module
 
-Syntek modules are Syntek source files. Syntek source files have the `.syntek` file extension. When importing a Syntek module all variables declared in the file scope of the module are imported. A Syntek module may also import other modules.
+Syntek modules are Syntek source files. Syntek source files have the `.tek` file extension. When importing a Syntek module all variables declared in the file scope of the module are imported. A Syntek module may also import other modules.
 
 ## Native Module
 
