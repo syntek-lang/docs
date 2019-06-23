@@ -12,7 +12,7 @@ AwaitExpr = 'await' Expression
 
 ```syntek
 await asyncFunction()
-await new Suspension(5)
+await new Suspension()
 ```
 
 ## References
