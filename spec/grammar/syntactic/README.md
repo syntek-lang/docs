@@ -74,7 +74,7 @@ VarLoc = ( Identifier | MemberExpression )
 ### Type
 
 ```grammar
-Type = ( VarLoc | 'any' ) '[]'*
+Type = ( VarLoc | 'any' | 'null' ) '[]'*
 ```
 
 - [Variable Location](/spec/grammar/syntactic/#variable-location)

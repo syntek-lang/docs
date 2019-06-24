@@ -1,5 +1,5 @@
 module.exports = (prism) => {
-  function keywordsToRegex(keywords) {
+  function wordsToRegex(keywords) {
     return new RegExp(`\\b(?:${keywords.join('|')})\\b`);
   }
 
@@ -13,7 +13,10 @@ module.exports = (prism) => {
     },
 
     builtin: {
-      pattern: /\b(?:print)\b/,
+      pattern: wordsToRegex([
+        'print',
+        'length',
+      ]),
       greedy: true,
     },
 
@@ -27,7 +30,7 @@ module.exports = (prism) => {
       greedy: true,
     },
 
-    keyword: keywordsToRegex([
+    keyword: wordsToRegex([
       'class', 'new', 'static', 'this', 'super', 'extends',
       'if', 'else',
       'switch', 'case', 'fallthrough',
@@ -38,7 +41,9 @@ module.exports = (prism) => {
       'for', 'in', 'repeat', 'times', 'while', 'continue', 'break',
       'and', 'or', 'not',
       'is', 'greater', 'less', 'than',
-      'any', 'null',
+      'any',
+
+      'null',
     ]),
 
     property: {

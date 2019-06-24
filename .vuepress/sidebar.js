@@ -75,6 +75,7 @@ module.exports = {
       ],
     },
     '/spec/scopes',
+    '/spec/builtins',
     '/spec/type-inference',
     '/spec/modules',
     '/spec/linting',
