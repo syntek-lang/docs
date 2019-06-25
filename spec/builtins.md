@@ -17,3 +17,53 @@ function length(any obj) returns Number
 ```
 
 `length` returns the length of a string or array. If `obj` is not a string or array an error will be thrown.
+
+## Object
+
+```syntek
+class Object
+```
+
+The Object class is the starting point for all values in Syntek.
+
+## Number
+
+```syntek
+class Number extends Object
+```
+
+## String
+
+```syntek
+class String extends Object
+```
+
+## Boolean
+
+```syntek
+class Boolean extends Object
+```
+
+## Array
+
+```syntek
+class Array extends Object
+```
+
+## Function
+
+```syntek
+class Function extends Object
+```
+
+## Error
+
+```syntek
+class Error extends Object
+```
+
+## Promise
+
+```syntek
+class Promise extends Object
+```

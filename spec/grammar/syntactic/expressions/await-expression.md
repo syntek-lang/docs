@@ -1,6 +1,6 @@
 # Await Expression
 
-An await expression waits for a suspension to complete, returning the value of the suspension when it's done. You can only use `await` inside functions declared as async. Awaiting anything other than a suspension will throw an error.
+An await expression waits for a promise to complete, returning the value of the promise when it's done. You can only use `await` inside functions declared as async. Awaiting anything other than a promise will throw an error.
 
 ## Structure
 
@@ -12,7 +12,7 @@ AwaitExpr = 'await' Expression
 
 ```syntek
 await asyncFunction()
-await new Suspension()
+await new Promise()
 ```
 
 ## References

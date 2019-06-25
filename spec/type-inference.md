@@ -42,7 +42,7 @@ x = not a
 ## Await Expression
 
 ```syntek
-# a must be a Suspension.
+# a must be a Promise.
 # x is any.
 x = await a
 ```
