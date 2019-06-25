@@ -32,7 +32,10 @@ module.exports = {
 
   themeConfig: {
     logo: '/images/logo.png',
-    repo: 'syntek-lang/docs',
+
+    repo: 'syntek-lang/syntek',
+    docsRepo: 'syntek-lang/docs',
+
     sidebarDepth: 3,
     editLinks: true,
     lastUpdated: true,
