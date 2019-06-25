@@ -2,6 +2,8 @@
 
 This chapter describes the syntactic grammar of Syntek. It is split up into [declarations](/spec/grammar/syntactic/declarations/), [expressions](/spec/grammar/syntactic/expressions/), and [statements](/spec/grammar/syntactic/statements/).
 
+Despite being indentation based, parsing is done relatively lax. Whitespace at the right-hand side of declarations, expressions, and statements can often be ignored, because the parser knows what the next token should be for the code to be valid.
+
 ## Structure
 
 Each token has it's own page, which contains an introduction with information about the token, the grammar of the token, examples of the token, and links to other tokens that got referenced.
