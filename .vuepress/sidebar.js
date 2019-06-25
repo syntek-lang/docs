@@ -76,6 +76,7 @@ module.exports = {
       ],
     },
     '/spec/scopes',
+    '/spec/operator-precedence',
     '/spec/builtins',
     '/spec/type-inference',
     '/spec/modules',
