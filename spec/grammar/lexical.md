@@ -51,7 +51,7 @@ HelloWorld
 The following keywords are reserved and cannot be used as identifiers:
 
 ```syntek
-class new static this super extends
+class new static this super extends instanceof
 if else
 switch case fallthrough
 function return returns
