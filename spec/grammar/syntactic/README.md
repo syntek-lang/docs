@@ -100,7 +100,7 @@ Param = Type? Identifier
 ParamList = '(' ( Param ( ',' Param )* )? ')'
 ReturnValue = 'returns' Type
 
-FuncSig = 'async'? 'function' Identifier ParamList ReturnValue? Newline
+FuncSig = 'function' Identifier ParamList ReturnValue? Newline
 ```
 
 - [Type](/spec/grammar/syntactic/#type)

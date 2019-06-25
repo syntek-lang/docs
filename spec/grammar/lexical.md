@@ -55,7 +55,7 @@ class new static this super extends instanceof
 if else
 switch case fallthrough
 function return returns
-async await
+async
 try catch throw
 import as
 for in repeat times while continue break

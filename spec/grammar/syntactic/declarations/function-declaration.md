@@ -8,8 +8,6 @@ The `return` keyword can be used to stop execution of the function and optionall
 
 A function can be overloaded by providing a different number of parameters as the other function declarations. If you have a function with 2 parameters, you can declare a function with 3 parameters and the same name. If you want to be able to call a function with a string and a number you must omit the type or use `any` as the type.
 
-Function declarations prefixed with `async` are asynchronous. Async functions always return a promise.
-
 ## Structure
 
 ```grammar
