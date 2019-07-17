@@ -15,7 +15,7 @@ module.exports = (prism) => {
     builtin: {
       pattern: wordsToRegex([
         'print',
-        'length',
+        'range',
       ]),
       greedy: true,
     },
