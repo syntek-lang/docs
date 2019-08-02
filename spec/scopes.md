@@ -6,40 +6,48 @@ There are 3 different scopes in Syntek that define where a variable can be acces
 
 ## File Scope
 
-Variables declared outside of a function, class, and interface are file scope. Variables that are in file scope are accessible in the entire file.
-
-Variables declared inside an if, loop, or switch statement take the closest available scope. In the following example this means that x is declared in the file scope of the program and is accessible outside of the if statement.
+Variables declared outside of a function, class, and block are in file scope. Variables in file scope are accessible in the entire file.
 
 ```syntek
-if true
-	x = 5
-
+x = 5
 print(x) # x is accessible here
 ```
 
-Variables declared in the file scope, excluding imports, are automatically exported.
+Variables declared in file scope, excluding imports, are automatically exported.
+
+## Block Scope
+
+When a variable is declared in one of the following statements, it is in a block scope:
+
+- If
+- Switch
+- For
+- Repeat
+- While
+- Try
+
+Variables inside block scope are accessible in the block and nested blocks, but not outside of the block.
+
+```syntek
+if true
+	x = 10
+	print(x) # x is accessible here
+
+	if true
+		print(x) # x is accessible here
+
+print(x) # x is not accessible here
+```
 
 ## Function Scope
 
-Variables declared inside a function are inside function scope. These variables are available inside the entire function, but not outside of it.
+Variables declared at the root of a function are inside function scope. These variables are available inside the entire function, but not outside of it.
 
 `x` is declared inside the function `main`, which makes it available inside the function. `x` is not accessible outside the function `main`.
 
 ```syntek
 function main()
 	x = 5
-	print(x) # x is accessible here
-
-main()
-print(x) # x is not accessible here
-```
-
-When you declare a variable inside an if, loop, or switch statement inside a function it takes the closest scope, which would be the function scope.
-
-```syntek
-function main()
-	if true
-		x = 5
 	print(x) # x is accessible here
 
 main()
