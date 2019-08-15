@@ -31,7 +31,6 @@ x = a or b
 
 # a must be a number.
 # x is a number.
-x = +a
 x = -a
 
 # a must be a boolean.

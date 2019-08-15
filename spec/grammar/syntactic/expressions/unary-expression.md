@@ -2,16 +2,15 @@
 
 A unary expression is an operation with only one operand. There are 3 types of unary expressions:
 
-- Plus
 - Negation
 - Not
 
-The right hand side of plus and negation must always be a number. The right hand side of not must always be a boolean.
+The right hand side of negation must always be a number. The right hand side of `not` must always be a boolean.
 
 ## Structure
 
 ```grammar
-UnaryOp = '+' | '-' | 'not'
+UnaryOp = '-' | 'not'
 UnaryExpr = UnaryOp Expression
 ```
 
@@ -19,7 +18,6 @@ UnaryExpr = UnaryOp Expression
 
 ```syntek
 -5
-+(5 * -5)
 not true
 ```
 
