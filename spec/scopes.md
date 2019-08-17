@@ -9,7 +9,7 @@ There are 3 different scopes in Syntek that define where a variable can be acces
 Variables declared outside of a function, class, and block are in file scope. Variables in file scope are accessible in the entire file.
 
 ```syntek
-x = 5
+var x = 5
 print(x) # x is accessible here
 ```
 
@@ -30,7 +30,7 @@ Variables inside block scope are accessible in the block and nested blocks, but 
 
 ```syntek
 if true
-	x = 10
+	var x = 10
 	print(x) # x is accessible here
 
 	if true
@@ -47,7 +47,7 @@ Variables declared at the root of a function are inside function scope. These va
 
 ```syntek
 function main()
-	x = 5
+	var x = 5
 	print(x) # x is accessible here
 
 main()
@@ -57,7 +57,7 @@ print(x) # x is not accessible here
 If `x` is declared outside the function scope it will reassign that variable. Shadowing variables is not possible.
 
 ```syntek
-x = 5
+var x = 5
 
 function main()
 	x = 10
@@ -73,7 +73,7 @@ Variables declared inside a class are only accessible through the class.
 
 ```syntek
 class MyClass
-	static x = 5
+	static var x = 5
 
 print(x) # x is not accessible
 ```
@@ -82,18 +82,18 @@ A class scope has a static and instance scope. You can use the same name in both
 
 ```syntek
 class MyClass
-	static x = 5
-	x = 10
+	static var x = 5
+	var x = 10
 ```
 
 You are able to declare a variable in a class regardless of whether it's already used outside of the class.
 
 ```syntek
-x = 5
+var x = 5
 
 class MyClass
-	static x = 10
-	x = 15
+	static var x = 10
+	var x = 15
 
 print(x) # prints 5
 ```

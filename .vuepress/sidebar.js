@@ -43,6 +43,7 @@ module.exports = {
               collapsable: false,
               children: [
                 '/spec/grammar/syntactic/expressions/',
+                '/spec/grammar/syntactic/expressions/assignment-expression',
                 '/spec/grammar/syntactic/expressions/wrapped-expression',
                 '/spec/grammar/syntactic/expressions/unary-expression',
                 '/spec/grammar/syntactic/expressions/binary-expression',
@@ -52,6 +53,7 @@ module.exports = {
                 '/spec/grammar/syntactic/expressions/new-expression',
                 '/spec/grammar/syntactic/expressions/instanceof-expression',
                 '/spec/grammar/syntactic/expressions/async-expression',
+                '/spec/grammar/syntactic/expressions/conditional-expression',
                 '/spec/grammar/syntactic/expressions/array-expression',
                 '/spec/grammar/syntactic/expressions/object-expression',
               ],

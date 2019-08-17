@@ -5,45 +5,45 @@ Syntek has strong type inference capabilities. Due to the strict nature of opera
 ## Binary and Unary Expressions
 
 ```syntek
-# a and b must be a number, boolean, or null.
+# a and b must be a number, or boolean.
 # x is a boolean.
-x = a is b
-x = a is not b
+var x = a is b
+var x = a is not b
 
 # a and b must be a number.
 # x is a boolean.
-x = a is less than b
-x = a is greater than b
+var x = a is less than b
+var x = a is greater than b
 
 # a and b must be a number.
 # x is a number.
-x = a + b
-x = a - b
-x = a * b
-x = a / b
-x = a % b
-x = a ^ b
+var x = a + b
+var x = a - b
+var x = a * b
+var x = a / b
+var x = a % b
+var x = a ^ b
 
 # a and b must be a boolean.
 # x is a boolean.
-x = a and b
-x = a or b
+var x = a and b
+var x = a or b
 
 # a must be a number.
 # x is a number.
-x = -a
+var x = -a
 
 # a must be a boolean.
 # x is a boolean.
-x = not a
+var x = not a
 ```
 
 ## Index Expression
 
 ```syntek
-# a must be an array, b must be a number.
-# x is any.
-x = a[b]
+# a must be an Array<T>, b must be a number.
+# x is T.
+var x = a[b]
 ```
 
 ## If Statement
@@ -57,18 +57,18 @@ else if b
 ## Switch Statement
 
 ```syntek
-# a must be a number, boolean, string, or null.
+# a must be a number, boolean, or string.
 switch a
 
-# a must be a number, boolean, string, or null.
+# a must be a number, boolean, or string.
 case a
 ```
 
 ## Loops
 
 ```syntek
-# a must be an array.
-# x is any.
+# a must be an Array<T>.
+# x is T.
 for x in a
 
 # a must be a number.
@@ -78,6 +78,26 @@ repeat a times
 while a
 ```
 
+## Functions
+
+```syntek
+# T -> T
+function identity(x)
+	return x
+
+var x = identity(5) # Number
+var y = identity(true) # Boolean
+```
+
+```syntek
+# Number -> Number
+function add5(x)
+	return x + 5
+
+var x = add5(10) # Number
+var y = add5(true) # Error
+```
+
 ## Example
 
 In the following code no explicit types are provided. Despite this, all types can be inferred.
@@ -85,13 +105,12 @@ In the following code no explicit types are provided. Despite this, all types ca
 ```syntek
 function multiply(a, b)
 	# sum is a number, because 0 is a number.
-	sum = 0
+	var sum = 0
 
 	# b must be number.
 	repeat b times
 
 		# a must be a number, because it's used in an arithmetic binary expression.
-		# sum stays a number, because 'sum + a' gives a number.
 		sum = sum + a
 
 	# sum is returned, which is a number, so multiply returns a number.

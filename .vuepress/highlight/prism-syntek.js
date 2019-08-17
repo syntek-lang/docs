@@ -26,7 +26,7 @@ module.exports = (prism) => {
     },
 
     function: {
-      pattern: /[a-zA-Z_]\w*(?=\s*\()/,
+      pattern: /[a-zA-Z_]\w*(?=\s*(?:\(|<))/,
       greedy: true,
     },
 
@@ -34,16 +34,14 @@ module.exports = (prism) => {
       'class', 'new', 'static', 'this', 'super', 'extends', 'instanceof',
       'if', 'else',
       'switch', 'case', 'fallthrough',
-      'function', 'return', 'returns',
+      'function', 'return', 'returns', 'void',
       'async',
       'try', 'catch', 'throw',
       'import', 'as',
       'for', 'in', 'repeat', 'times', 'while', 'continue', 'break',
       'and', 'or', 'not',
       'is', 'greater', 'less', 'than',
-      'any',
-
-      'null',
+      'var',
     ]),
 
     property: {
@@ -54,6 +52,6 @@ module.exports = (prism) => {
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: /[+\-*/%^=]/,
-    punctuation: /[.,[\](){}]/,
+    punctuation: /[.,[\](){}<>]/,
   };
 };

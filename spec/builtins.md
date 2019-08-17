@@ -39,11 +39,11 @@ range(5, 6, 3) # [5]
 
 ## Object
 
+The `Object` class is the starting point for all values in Syntek.
+
 ```syntek
 class Object
 ```
-
-The Object class is the starting point for all values in Syntek.
 
 ## Number
 
@@ -63,16 +63,32 @@ class String extends Object
 class Boolean extends Object
 ```
 
+## Optional
+
+```syntek
+class Optional<T> extends Object
+```
+
 ## Array
 
 ```syntek
-class Array extends Object
+class Array<T> extends Object
 ```
 
 ## Function
 
+The `Function` class has a dynamic amount of generic parameters. The generics are the types of the parameters, with the last generic being the return type of the function.
+
 ```syntek
-class Function extends Object
+class Function<T1, T2, Tn, TResult> extends Object
+```
+
+## VoidFunction
+
+The `VoidFunction` class is similar to the `Function` class, but it always returns `void`.
+
+```syntek
+class VoidFunction<T1, T2, Tn> extends Object
 ```
 
 ## Error

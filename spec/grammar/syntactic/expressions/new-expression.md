@@ -7,7 +7,7 @@ A new expression creates an instance of the given class.
 ```grammar
 Class = Identifier ( '.' Identifier )*
 ParamList = '(' ( Expression ( ',' Expression )* )? ')'
-NewExpr = 'new' Class ParamList
+NewExpr = 'new' Class GenericArgs? ParamList
 ```
 
 ## Example
@@ -17,9 +17,11 @@ new Table()
 new Desk('oak')
 new furniture.Bed('soft', 2)
 new furniture.chairs.WoodenChair()
+new furniture.chairs.Char<Wood>()
 ```
 
 ## References
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Expression](/spec/grammar/syntactic/expressions/)
+- [Generic Arguments](/spec/grammar/syntactic/#generic-arguments)

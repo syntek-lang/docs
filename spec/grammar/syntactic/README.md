@@ -70,16 +70,66 @@ This chapter needs to reuse a lot of tokens. The most common tokens are listed o
 VarLoc = ( Identifier | MemberExpression )
 ```
 
+```syntek
+Number
+a.b
+x.y.z
+```
+
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Member Expression](/spec/grammar/syntactic/expressions/member-expression.html)
+
+### Generic Parameters
+
+```grammar
+GenericParams = '<' Identifier ( ',' Identifier )* '>'
+```
+
+```syntek
+<T>
+<T1, T2>
+<A, B, C>
+```
+
+- [Identifier](/spec/grammar/lexical.html#identifiers)
+
+### Generic Arguments
+
+```grammar
+GenericArgs = '<' Type ( ',' Type )* '>'
+```
+
+```syntek
+<Number>
+<Number, Number>
+<x.y>
+<a.b, x.y>
+<Array<Number>>
+<Array<Number>, Array<Number>>
+```
+
+- [Type](/spec/grammar/syntactic/#type)
 
 ### Type
 
 ```grammar
-Type = ( VarLoc | 'any' | 'null' ) '[]'*
+Type = VarLoc GenericArgs? '[]'*
+```
+
+```syntek
+Number
+Number[]
+Number[][]
+x.y
+x.y[]
+x.y[][]
+Array<Number>
+Array<Optional<Number>>
+Array<Optional<Number>>[]
 ```
 
 - [Variable Location](/spec/grammar/syntactic/#variable-location)
+- [Generic Arguments](/spec/grammar/syntactic/#generic-arguments)
 
 ### Block
 
@@ -98,11 +148,14 @@ Block = Indent ( Declaration | Expression | Statement )+ Outdent
 ```grammar
 Param = Type? Identifier
 ParamList = '(' ( Param ( ',' Param )* )? ')'
-ReturnValue = 'returns' Type
+ReturnValue = 'returns' ( Type | 'void' )
 
-FuncSig = 'function' Identifier ParamList ReturnValue? Newline
+FuncSig = 'function' GenericParams? Identifier ParamList ReturnValue? Newline
 ```
 
+More info: [Function Declaration](/spec/grammar/syntactic/declarations/function-declaration.html)
+
 - [Type](/spec/grammar/syntactic/#type)
-- [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Newline](/spec/grammar/lexical.html#newline)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Generic Parameters](/spec/grammar/syntactic/#generic-parameters)

@@ -54,14 +54,14 @@ The following keywords are reserved and cannot be used as identifiers:
 class new static this super extends instanceof
 if else
 switch case fallthrough
-function return returns
+function return returns void
 async
 try catch throw
 import as
 for in repeat times while continue break
 and or not
 is greater less than
-any
+var
 ```
 
 ## Operators and punctuation
@@ -69,9 +69,9 @@ any
 The following characters represent operators and punctuation:
 
 ```syntek
-+ - * / % ^
-. , [ ] ( ) { }
 =
++ - * / % ^
+. , [ ] ( ) { } < >
 ```
 
 ## Literals
@@ -136,12 +136,4 @@ A boolean can have 2 values. `true` and `false`.
 ```syntek
 true
 false
-```
-
-### Null
-
-Null is a special type that can be assigned to all types.
-
-```syntek
-null
 ```

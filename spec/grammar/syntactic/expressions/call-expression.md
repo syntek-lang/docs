@@ -6,7 +6,7 @@ A call expression invokes the given identifier as a function.
 
 ```grammar
 ParamList = '(' ( Expression ( ',' Expression )* )? ')'
-CallExpr = Expression '(' ParamList? ')'
+CallExpr = Expression GenericArgs? '(' ParamList? ')'
 ```
 
 ## Example
@@ -16,8 +16,11 @@ start()
 padLeft('Hello', 5, ' ')
 print(getValue())
 max((5 + 3) * 2, 9) + min(5, getValue())
+identity<Number>(5)
+createPair<Number, String>(5, 'Hello')
 ```
 
 ## References
 
 - [Expression](/spec/grammar/syntactic/expressions/)
+- [Generic Arguments](/spec/grammar/syntactic/#generic-arguments)

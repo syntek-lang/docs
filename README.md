@@ -27,7 +27,7 @@ Syntek is an easy to use educational programming language. It is designed to pro
 The following code shows an interactive snake assignment. An interactive demo can be found at [syntek.dev](https://syntek.dev/).
 
 ```syntek
-direction = 1
+var direction = 1
 
 function arrowUp()
 	direction = 0

@@ -2,11 +2,11 @@
 
 A function declaration stores a function under an identifier. The identifier can be used to execute the function.
 
-A function can optionally specify the types of it's parameters and it's return value. If a function is called with the wrong types an error will be thrown. If a function specifies it's return type but returns a wrong type an error will also be thrown.
+If parameter types and/or the return type is not explicitely provided it will be inferred from the usage.
 
-The `return` keyword can be used to stop execution of the function and optionally return a value to the function caller. If the function does not use `return` it will implicitely return `null`.
+The `return` keyword can be used to stop execution of the function and optionally return a value to the function caller. If the function does not use `return` it will implicitely return `void`.
 
-A function can be overloaded by providing a different number of parameters as the other function declarations. If you have a function with 2 parameters, you can declare a function with 3 parameters and the same name. If you want to be able to call a function with a string and a number you must omit the type or use `any` as the type.
+A function can be overloaded by providing a different number of parameters as the other function declarations. If you have a function with 2 parameters, you can declare a function with 3 parameters and the same name.
 
 ## Structure
 
@@ -18,6 +18,9 @@ FuncDecl = FuncSig Block
 
 ```syntek
 function main()
+	print('Hello, World!')
+
+function main() returns void
 	print('Hello, World!')
 
 function add(a, b)
@@ -32,6 +35,12 @@ function pow(a, b) returns Number
 function printNumbers(Number[] numbers)
 	for num in numbers
 		print(num)
+
+function identity(x)
+	return x
+
+function <T> identity(T x) returns T
+	return x
 ```
 
 ## References
