@@ -1,23 +1,24 @@
 # Assignment Expression
 
-An assignment expression changes a variable on a given object.
+An assignment expression is used to reassign a variable.
 
 Even though an assignment expression is an expression, it may not be combined with other expressions.
 
 ## Structure
 
 ```grammar
-AssignmentExpr = MemberExpression '=' Expression
+AssignmentExpr = Expression '=' Expression
 ```
 
 ## Example
 
 ```syntek
-obj.value = 10
+x = 5
+array[0] = 10
+obj.value = 15
 obj.prop.value = [1, 2, 3]
 ```
 
 ## References
 
 - [Expression](/spec/grammar/syntactic/expressions/)
-- [Member Expression](/spec/grammar/syntactic/expressions/member-expression.html)

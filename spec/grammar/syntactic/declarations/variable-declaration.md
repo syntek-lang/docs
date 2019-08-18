@@ -10,20 +10,15 @@ All variables are non-final and may be reassigned. Reassignments may not include
 
 ```grammar
 VarDecl = ( 'var' | Type ) Identifier '=' Expression Newline
-VarAssign = Identifier '=' Expression Newline
 ```
 
 ## Example
 
 ```syntek
-# Declaration
 var x = 5
 Number y = 5
 Number[] numbers = [1, 2, 3]
 Number[][] matrix = [[1, 2], [3, 4]]
-
-# Assignment
-x = 5
 ```
 
 ## References
