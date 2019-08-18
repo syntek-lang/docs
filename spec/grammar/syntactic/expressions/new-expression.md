@@ -17,7 +17,7 @@ new Table()
 new Desk('oak')
 new furniture.Bed('soft', 2)
 new furniture.chairs.WoodenChair()
-new furniture.chairs.Char<Wood>()
+new furniture.chairs.Chair<Wood>()
 ```
 
 ## References

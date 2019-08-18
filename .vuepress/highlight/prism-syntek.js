@@ -6,29 +6,12 @@ module.exports = (prism) => {
   // eslint-disable-next-line no-param-reassign
   prism.languages.syntek = {
     comment: /#.*/,
+    string: /'(?:[^'\\]|\\.)*'/,
 
-    string: {
-      pattern: /'(?:[^'\\]|\\.)*'/,
-      greedy: true,
-    },
-
-    builtin: {
-      pattern: wordsToRegex([
-        'print',
-        'range',
-      ]),
-      greedy: true,
-    },
-
-    'class-name': {
-      pattern: /\b[A-Z]\w*/,
-      greedy: true,
-    },
-
-    function: {
-      pattern: /[a-zA-Z_]\w*(?=\s*(?:\(|<))/,
-      greedy: true,
-    },
+    builtin: wordsToRegex([
+      'print',
+      'range',
+    ]),
 
     keyword: wordsToRegex([
       'class', 'new', 'static', 'this', 'super', 'extends', 'instanceof',
@@ -43,6 +26,9 @@ module.exports = (prism) => {
       'is', 'greater', 'less', 'than',
       'var',
     ]),
+
+    'class-name': /\b[A-Z]\w*/,
+    function: /[a-zA-Z_]\w*(?=\s*(?:\(|<))/,
 
     property: {
       pattern: /(\.)[a-zA-Z_]\w*(?!\s*\()/,

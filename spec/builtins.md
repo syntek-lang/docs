@@ -5,7 +5,7 @@ This chapter covers builtin functions and classes in Syntek. The functions and c
 ## print
 
 ```syntek
-function print(any obj) returns null
+function print(Object obj) returns void
 ```
 
 `print` outputs a string to console, stdout, or another target. If `obj` is not a string the `toString` method will be called on it.

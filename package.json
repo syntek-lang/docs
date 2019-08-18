@@ -6,7 +6,7 @@
     "dev": "vuepress dev",
     "build": "vuepress build",
     "lint": "npm run lint:code && npm run lint:md",
-    "lint:code": "eslint . --ext .js,.md",
+    "lint:code": "eslint --ext .js,.md --ignore-path .gitignore .",
     "lint:md": "markdownlint spec/**"
   },
   "dependencies": {

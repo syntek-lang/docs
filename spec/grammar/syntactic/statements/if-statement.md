@@ -16,17 +16,17 @@ ElseStmt = 'else' ( IfStmt | ( Newline Block ) )
 ## Example
 
 ```syntek
-if x is 5
+if x is less than 5
 	print('x is 5')
 
-if time < 18
+if time is less than 18
 	print('Good day')
 else
 	print('Good evening')
 
-if time < 10
+if time is less than 10
 	print('Good morning')
-else if time < 18
+else if time is less than 18
 	print('Good day')
 else
 	print('Good evening')
