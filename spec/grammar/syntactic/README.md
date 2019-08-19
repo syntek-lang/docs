@@ -67,7 +67,7 @@ This chapter needs to reuse a lot of tokens. The most common tokens are listed o
 ### Variable Location
 
 ```grammar
-VarLoc = ( Identifier | MemberExpression )
+VarLoc = Identifier ( '.' Identifier )*
 ```
 
 ```syntek
@@ -77,7 +77,6 @@ x.y.z
 ```
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)
-- [Member Expression](/spec/grammar/syntactic/expressions/member-expression.html)
 
 ### Generic Parameters
 
