@@ -2,23 +2,23 @@
 
 A variable declaration stores a value under the given identifier. The identifier can be used to retrieve the value.
 
-If a variable is declared with `var` the type will be inferred by it's usage.
+If a variable does not explicitely provide a type, the type will be inferred by it's usage.
 
-All variables are non-final and may be reassigned. Reassignments may not include `var` or a type.
+All variables are non-final and may be reassigned.
 
 ## Structure
 
 ```grammar
-VarDecl = ( 'var' | Type ) Identifier '=' Expression Newline
+VarDecl = 'var' Identifier ( ':' Type )? '=' Expression Newline
 ```
 
 ## Example
 
 ```syntek
 var x = 5
-Number y = 5
-Number[] numbers = [1, 2, 3]
-Number[][] matrix = [[1, 2], [3, 4]]
+var y: Number = 5
+var numbers: Number[] = [1, 2, 3]
+var matrix: Number[][] = [[1, 2], [3, 4]]
 ```
 
 ## References

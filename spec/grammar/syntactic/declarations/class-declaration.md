@@ -13,7 +13,7 @@ A class can extend multiple other classes. If there is a naming collision with m
 ## Structure
 
 ```grammar
-EmptyDecl = ( 'var' | Type ) Identifier
+EmptyDecl = 'var' Identifier ( ':' Type )?
 ClassProp = 'static'? ( Declaration | EmptyDecl )
 
 ClassBody = Indent ClassProp+ Outdent
@@ -28,12 +28,12 @@ ClassDecl = 'class' Identifier GenericParams? Extends? Newline ClassBody
 class MyClass
 	var language = 'Syntek'
 
-	function toString() returns String
+	function toString(): String
 		return this.language
 
 class Child extends MyClass
-	static Number x = 5
-	static Number y = 15
+	static var x: Number = 5
+	static var y: Number = 15
 
 class Horse extends Animal, Rideable
 	function ride()
@@ -57,17 +57,17 @@ class C extends A, B
 
 # LinkedList
 class Node<T>
-	T data
-	Optional<Node<T>> next
-	Optional<Node<T>> previous
+	var data: T
+	var next: Optional<Node<T>>
+	var previous: Optional<Node<T>>
 
-	function Node(T data)
+	function Node(data: T)
 		this.data = data
 		this.next = Optional.empty()
 		this.previous = Optional.empty()
 
 class LinkedList<T>
-	Node<T> head
+	var head: Node<T>
 
 	function LinkedList()
 		this.head = new Node<T>()

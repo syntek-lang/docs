@@ -20,12 +20,12 @@ ObjectExpr = EmptyObject | FilledObject
 }
 
 {
-	Number y = 10
+	var y: Number = 10
 
-	function getValue() returns Number
+	function getValue(): Number
 		return 5
 
-	function printString(String string)
+	function printString(string: String)
 		print(string)
 }
 ```

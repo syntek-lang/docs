@@ -5,9 +5,8 @@ A new expression creates an instance of the given class.
 ## Structure
 
 ```grammar
-Class = Identifier ( '.' Identifier )*
 ParamList = '(' ( Expression ( ',' Expression )* )? ')'
-NewExpr = 'new' Class GenericArgs? ParamList
+NewExpr = 'new' Expression GenericArgs? ParamList
 ```
 
 ## Example
@@ -22,6 +21,5 @@ new furniture.chairs.Chair<Wood>()
 
 ## References
 
-- [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Expression](/spec/grammar/syntactic/expressions/)
 - [Generic Arguments](/spec/grammar/syntactic/#generic-arguments)

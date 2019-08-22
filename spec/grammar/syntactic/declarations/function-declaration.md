@@ -20,26 +20,26 @@ FuncDecl = FuncSig Block
 function main()
 	print('Hello, World!')
 
-function main() returns void
+function main(): void
 	print('Hello, World!')
 
 function add(a, b)
 	return a + b
 
-function multiply(Number a, Number b)
+function multiply(a: Number, b: Number)
 	return a * b
 
-function pow(a, b) returns Number
+function pow(a, b): Number
 	return a ^ b
 
-function printNumbers(Number[] numbers)
+function printNumbers(numbers: Number[])
 	for num in numbers
 		print(num)
 
 function identity(x)
 	return x
 
-function <T> identity(T x) returns T
+function <T> identity(x: T): T
 	return x
 ```
 

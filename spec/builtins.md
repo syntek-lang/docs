@@ -5,7 +5,7 @@ This chapter covers builtin functions and classes in Syntek. The functions and c
 ## print
 
 ```syntek
-function print(Object obj) returns void
+function print(obj: Object): void
 ```
 
 `print` outputs a string to console, stdout, or another target. If `obj` is not a string the `toString` method will be called on it.
@@ -14,14 +14,14 @@ function print(Object obj) returns void
 
 ```syntek
 # Sequence of numbers from 0 (inclusive) to "end" (exclusive)
-function range(Number end) returns Number[]
+function range(end: Number): Number[]
 
 # Sequence of numbers from "start" (inclusive) to "end" (exclusive)
-function range(Number start, Number end) returns Number[]
+function range(start: Number, end: Number): Number[]
 
 # Sequence of numbers from "start" (inclusive) to "end" (exclusive)
 # with steps of "step"
-function range(Number start, Number end, Number step) returns Number[]
+function range(start: Number, end: Number, step: Number): Number[]
 ```
 
 `range` returns an array of numbers. `range` can be called in 3 different ways. `start` is inclusive and `end` is exclusive. `end` must be greater than `start` and `step` must be greater than 0.
@@ -43,6 +43,12 @@ The `Object` class is the starting point for all values in Syntek.
 
 ```syntek
 class Object
+```
+
+## Class
+
+```syntek
+class Class<T> extends Object
 ```
 
 ## Number

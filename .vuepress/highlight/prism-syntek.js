@@ -17,7 +17,7 @@ module.exports = (prism) => {
       'class', 'new', 'static', 'this', 'super', 'extends', 'instanceof',
       'if', 'else',
       'switch', 'case', 'fallthrough',
-      'function', 'return', 'returns', 'void',
+      'function', 'return', 'void',
       'async',
       'try', 'catch', 'throw',
       'import', 'as',
@@ -38,6 +38,6 @@ module.exports = (prism) => {
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: /[+\-*/%^=]/,
-    punctuation: /[.,[\](){}<>]/,
+    punctuation: /[.,[\](){}<>:]/,
   };
 };

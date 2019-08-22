@@ -7,7 +7,7 @@ The iterator expression must resolve to an array.
 ## Structure
 
 ```grammar
-ForStmt = 'for' Type? Identifier 'in' Expression Newline Block
+ForStmt = 'for' Identifier ( ':' Type )? 'in' Expression Newline Block
 ```
 
 ## Example
@@ -16,7 +16,7 @@ ForStmt = 'for' Type? Identifier 'in' Expression Newline Block
 for x in range(0, 10)
 	print(x)
 
-for Number y in [1, 2, 3]
+for y: Number in [1, 2, 3]
 	print(y)
 ```
 

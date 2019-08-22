@@ -36,7 +36,7 @@ Increment = Identifier '++'
 
 An or is used to show that the grammar can be one of 2 possibilities. Or is displayed with a `|` character.
 
-The following example declares that `Line` is a `Declaration`, `Expression` or `Statement`:
+The following example declares that `Line` is a `Declaration`, `Expression`, or `Statement`:
 
 ```grammar
 Line = Declaration | Expression | Statement
@@ -54,7 +54,7 @@ Quantifiers are used to denote that something is optional or should occur more t
 
 A group may be used to describe more complex grammar that involve quantifiers.
 
-The following example declares that `Block` is one or more `Declaration`, `Expression` or `Statement` tokens:
+The following example declares that `Block` is one or more `Declaration`, `Expression`, or `Statement` token:
 
 ```grammar
 Block = ( Declaration | Expression | Statement )+
@@ -145,9 +145,9 @@ Block = Indent ( Declaration | Expression | Statement )+ Outdent
 ### Function Signature
 
 ```grammar
-Param = Type? Identifier
+Param = Identifier ( ':' Type )?
 ParamList = '(' ( Param ( ',' Param )* )? ')'
-ReturnValue = 'returns' ( Type | 'void' )
+ReturnValue = ':' ( Type | 'void' )
 
 FuncSig = 'function' GenericParams? Identifier ParamList ReturnValue? Newline
 ```

@@ -5,7 +5,7 @@ Try statements execute a block of code. If the code in try block throws an excep
 ## Structure
 
 ```grammar
-ErrorVariable = Type? Identifier
+ErrorVariable = Identifier ( ':' Type )?
 
 TryStmt = 'try' Newline Block CatchStmt
 CatchStmt = 'catch' ErrorVariable? Newline Block
@@ -26,7 +26,7 @@ catch num
 
 try
 	throw new Error('An error')
-catch Error error
+catch error: Error
 	print(error)
 ```
 

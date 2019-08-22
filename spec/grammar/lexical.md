@@ -54,7 +54,7 @@ The following keywords are reserved and cannot be used as identifiers:
 class new static this super extends instanceof
 if else
 switch case fallthrough
-function return returns void
+function return void
 async
 try catch throw
 import as
@@ -71,7 +71,7 @@ The following characters represent operators and punctuation:
 ```syntek
 =
 + - * / % ^
-. , [ ] ( ) { } < >
+. , [ ] ( ) { } < > :
 ```
 
 ## Literals
