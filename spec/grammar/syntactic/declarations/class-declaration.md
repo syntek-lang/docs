@@ -13,8 +13,7 @@ A class can extend multiple other classes. If there is a naming collision with m
 ## Structure
 
 ```grammar
-EmptyDecl = 'var' Identifier ( ':' Type )?
-ClassProp = 'static'? ( Declaration | EmptyDecl )
+ClassProp = 'static'? Declaration
 
 ClassBody = Indent ClassProp+ Outdent
 Extends = 'extends' VarLoc ( ',' VarLoc )*
