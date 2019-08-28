@@ -55,7 +55,6 @@ module.exports = {
                 '/spec/grammar/syntactic/expressions/async-expression',
                 '/spec/grammar/syntactic/expressions/conditional-expression',
                 '/spec/grammar/syntactic/expressions/array-expression',
-                '/spec/grammar/syntactic/expressions/object-expression',
               ],
             },
             {

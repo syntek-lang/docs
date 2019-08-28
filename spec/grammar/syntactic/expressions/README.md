@@ -16,7 +16,6 @@ An expression is one of the following:
 - [Async Expression](/spec/grammar/syntactic/expressions/async-expression.html)
 - [Conditional Expression](/spec/grammar/syntactic/expressions/conditional-expression.html)
 - [Array Expression](/spec/grammar/syntactic/expressions/array-expression.html)
-- [Object Expression](/spec/grammar/syntactic/expressions/object-expression.html)
 - [Identifiers](/spec/grammar/lexical.html#identifiers)
 - [Literals](/spec/grammar/lexical.html#literals)
 
