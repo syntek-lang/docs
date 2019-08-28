@@ -38,6 +38,6 @@ module.exports = (prism) => {
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: /[+\-*/%^=]/,
-    punctuation: /[.,[\](){}<>:]/,
+    punctuation: /[.,[\]()<>:]/,
   };
 };

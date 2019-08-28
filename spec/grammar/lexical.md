@@ -71,7 +71,7 @@ The following characters represent operators and punctuation:
 ```syntek
 =
 + - * / % ^
-. , [ ] ( ) { } < > :
+. , [ ] ( ) < > :
 ```
 
 ## Literals
