@@ -8,17 +8,12 @@ Try statements execute a block of code. If the code in try block throws an excep
 ErrorVariable = Identifier ( ':' Type )?
 
 TryStmt = 'try' Newline Block CatchStmt
-CatchStmt = 'catch' ErrorVariable? Newline Block
+CatchStmt = 'catch' ErrorVariable Newline Block
 ```
 
 ## Example
 
 ```syntek
-try
-	fetch('https://syntek.dev')
-catch
-	print('An error occurred')
-
 try
 	throw 5
 catch num
