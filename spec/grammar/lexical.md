@@ -34,7 +34,7 @@ Space and tab characters are ignored by the compiler.
 
 Identifiers are user defined names for entities such as variables and functions. An identifier is a sequence of one or more letters, digits, and underscores. The first character in an identifier must be a letter or underscore.
 
-Keywords and literals cannot be used as identifiers.
+Keywords and literals cannot be used as identifiers, with the exception of class properties/methods.
 
 ```syntek
 # valid
@@ -48,11 +48,11 @@ HelloWorld
 
 ## Keywords
 
-The following keywords are reserved and cannot be used as identifiers:
+The following keywords are reserved and cannot be used as identifiers, with the exception of class properties/methods.
 
 ```syntek
 class new static this super extends instanceof
-if else
+if then else
 switch case fallthrough
 function return void
 async

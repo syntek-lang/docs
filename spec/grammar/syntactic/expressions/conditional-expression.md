@@ -7,13 +7,13 @@ If statements have higher precedence than conditional expressions.
 ## Structure
 
 ```grammar
-ConditionalExpr = 'if' Expression Expression 'else' Expression
+ConditionalExpr = 'if' Expression 'then' Expression 'else' Expression
 ```
 
 ## Example
 
 ```syntek
-var x = if true 5 else 10
+var x = if true then 5 else 10
 ```
 
 ## References
