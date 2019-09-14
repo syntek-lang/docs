@@ -46,6 +46,14 @@ var x = not a
 var x = a[b]
 ```
 
+## Async Expression
+
+```syntek
+# a is T.
+# x is Promise<T>.
+var x = async a
+```
+
 ## If Statement
 
 ```syntek

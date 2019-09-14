@@ -1,6 +1,6 @@
 # Switch Statement
 
-Switch statements provide multi-way execution. The expression of a switch statement must resolve to a number, boolean, string, or null.
+Switch statements provide multi-way execution. The expression of a switch statement must resolve to a number, boolean, or string.
 
 If a case matches the expression the block is executed. Blocks implicitely break, but breaking explicitely is possible.
 

@@ -1,6 +1,6 @@
 # Async Expression
 
-An async expression skips awaiting for a promise to resolve.
+Async expressions can be used to not implicitely await. It wraps the value in `Promise` and returns it immediately.
 
 ## Structure
 
@@ -12,7 +12,6 @@ AsyncExpr = 'async' Expression
 
 ```syntek
 async asyncFunction()
-async new Promise()
 ```
 
 ## References
