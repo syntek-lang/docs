@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "test": "npm run lint && npm run build",
-    "dev": "vuepress dev",
-    "build": "vuepress build",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
     "lint": "npm run lint:code && npm run lint:md",
     "lint:code": "eslint --ext .js,.md --ignore-path .gitignore .",
-    "lint:md": "markdownlint spec/**"
+    "lint:md": "markdownlint docs/spec/**"
   },
   "dependencies": {
     "markdown-it-imsize": "^2.0.1",
