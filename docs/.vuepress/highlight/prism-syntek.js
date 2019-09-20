@@ -19,7 +19,6 @@ module.exports = (prism) => {
       'switch', 'case', 'fallthrough',
       'function', 'return', 'void',
       'async',
-      'try', 'catch', 'throw',
       'import', 'as',
       'for', 'in', 'repeat', 'times', 'while', 'continue', 'break',
       'and', 'or', 'not',

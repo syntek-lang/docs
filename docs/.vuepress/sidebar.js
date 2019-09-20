@@ -67,8 +67,6 @@ module.exports = {
                 '/spec/grammar/syntactic/statements/for-statement',
                 '/spec/grammar/syntactic/statements/repeat-statement',
                 '/spec/grammar/syntactic/statements/while-statement',
-                '/spec/grammar/syntactic/statements/try-statement',
-                '/spec/grammar/syntactic/statements/throw-statement',
                 '/spec/grammar/syntactic/statements/return-statement',
               ],
             },

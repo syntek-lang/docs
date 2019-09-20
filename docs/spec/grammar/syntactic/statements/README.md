@@ -9,8 +9,6 @@ A statement is one of the following:
 - [For Statement](/spec/grammar/syntactic/statements/for-statement.html)
 - [Repeat Statement](/spec/grammar/syntactic/statements/repeat-statement.html)
 - [While Statement](/spec/grammar/syntactic/statements/while-statement.html)
-- [Try Statement](/spec/grammar/syntactic/statements/try-statement.html)
-- [Throw Statement](/spec/grammar/syntactic/statements/throw-statement.html)
 - [Return Statement](/spec/grammar/syntactic/statements/return-statement.html)
 
 Additionally the following keywords are also seen as a statement:

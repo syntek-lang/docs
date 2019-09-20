@@ -24,7 +24,6 @@ When a variable is declared in one of the following statements, it is in a block
 - For
 - Repeat
 - While
-- Try
 
 Variables inside block scope are accessible in the block and nested blocks, but not outside of the block.
 
