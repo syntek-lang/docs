@@ -4,7 +4,7 @@ Switch statements provide multi-way execution. The expression of a switch statem
 
 If a case matches the expression the block is executed. Blocks implicitely break, but breaking explicitely is possible.
 
-You can use `fallthrough` to explicitely fallthrough to the next case block. The condition of the case is not evaluated on fallthrough.
+You can use `continue` to explicitely fallthrough to the next case block. The condition of the case is not evaluated on fallthrough.
 
 ## Structure
 
@@ -30,7 +30,7 @@ switch y
 		break
 	case get7()
 		print('x is 7')
-		fallthrough
+		continue
 	case 8
 		print('x is 7 or 8')
 ```

@@ -53,7 +53,7 @@ The following keywords are reserved and cannot be used as identifiers, with the 
 ```syntek
 class new static this super extends instanceof
 if then else
-switch case fallthrough
+switch case
 function return void
 async
 import as

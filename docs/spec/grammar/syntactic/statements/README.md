@@ -14,5 +14,5 @@ A statement is one of the following:
 Additionally the following keywords are also seen as a statement:
 
 ```syntek
-break continue fallthrough
+break continue
 ```
