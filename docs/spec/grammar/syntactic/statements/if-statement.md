@@ -17,21 +17,21 @@ ElseStmt = 'else' ( IfStmt | Block )
 
 ```syntek
 if x is less than 5 {
-	print('x is 5')
+  print('x is 5')
 }
 
 if time is less than 18 {
-	print('Good day')
+  print('Good day')
 } else {
-	print('Good evening')
+  print('Good evening')
 }
 
 if time is less than 10 {
-	print('Good morning')
+  print('Good morning')
 } else if time is less than 18 {
-	print('Good day')
+  print('Good day')
 } else {
-	print('Good evening')
+  print('Good evening')
 }
 ```
 

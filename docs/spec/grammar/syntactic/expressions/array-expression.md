@@ -17,20 +17,20 @@ ArrayExpr = '[' Elements ']'
 [true, 'hello', getValue(), (10 + 5) * 3]
 
 [
-	5
+  5
 ]
 
 [
-	1,
-	2,
-	3
+  1,
+  2,
+  3
 ]
 
 [
-	true,
-	'hello',
-	getValue(),
-	(10 + 5) * 3
+  true,
+  'hello',
+  getValue(),
+  (10 + 5) * 3
 ]
 ```
 

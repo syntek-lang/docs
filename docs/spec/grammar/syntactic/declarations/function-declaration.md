@@ -18,37 +18,37 @@ FuncDecl = FuncSig Block
 
 ```syntek
 function main() {
-	print('Hello, World!')
+  print('Hello, World!')
 }
 
 function main(): void {
-	print('Hello, World!')
+  print('Hello, World!')
 }
 
 function add(a, b) {
-	return a + b
+  return a + b
 }
 
 function multiply(a: Number, b: Number) {
-	return a * b
+  return a * b
 }
 
 function pow(a, b): Number {
-	return a ^ b
+  return a ^ b
 }
 
 function printNumbers(numbers: Number[]) {
-	for num in numbers {
-		print(num)
-	}
+  for num in numbers {
+    print(num)
+  }
 }
 
 function identity(x) {
-	return x
+  return x
 }
 
 function <T> identity(x: T): T {
-	return x
+  return x
 }
 ```
 

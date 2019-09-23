@@ -30,31 +30,31 @@ The following code shows an interactive snake assignment. An interactive demo ca
 var direction = 1
 
 function arrowUp() {
-	direction = 0
+  direction = 0
 }
 
 function arrowRight() {
-	direction = 1
+  direction = 1
 }
 
 function arrowDown() {
-	direction = 2
+  direction = 2
 }
 
 function arrowLeft() {
-	direction = 3
+  direction = 3
 }
 
 function loop() {
-	if direction is 0 {
-		moveUp()
-	} else if direction is 1 {
-		moveRight()
-	} else if direction is 2 {
-		moveDown()
-	} else if direction is 3 {
-		moveLeft()
-	}
+  if direction is 0 {
+    moveUp()
+  } else if direction is 1 {
+    moveRight()
+  } else if direction is 2 {
+    moveDown()
+  } else if direction is 3 {
+    moveLeft()
+  }
 }
 ```
 

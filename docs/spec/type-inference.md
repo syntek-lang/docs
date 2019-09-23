@@ -91,7 +91,7 @@ while a
 ```syntek
 # T -> T
 function identity(x) {
-	return x
+  return x
 }
 
 var x = identity(5) # Number
@@ -101,7 +101,7 @@ var y = identity(true) # Boolean
 ```syntek
 # Number -> Number
 function add5(x) {
-	return x + 5
+  return x + 5
 }
 
 var x = add5(10) # Number
@@ -114,17 +114,17 @@ In the following code no explicit types are provided. Despite this, all types ca
 
 ```syntek
 function multiply(a, b) {
-	# sum is a number, because 0 is a number.
-	var sum = 0
+  # sum is a number, because 0 is a number.
+  var sum = 0
 
-	# b must be number.
-	repeat b times {
+  # b must be number.
+  repeat b times {
 
-		# a must be a number, because it's used in an arithmetic binary expression.
-		sum = sum + a
-	}
+    # a must be a number, because it's used in an arithmetic binary expression.
+    sum = sum + a
+  }
 
-	# sum is returned, which is a number, so multiply returns a number.
-	return sum
+  # sum is returned, which is a number, so multiply returns a number.
+  return sum
 }
 ```

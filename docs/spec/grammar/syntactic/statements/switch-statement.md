@@ -17,29 +17,29 @@ SwitchStmt = 'switch' Expression '{' Case+ '}'
 
 ```syntek
 switch x {
-	case 5 {
-		print('x is 5')
-	}
-	case 6 {
-		print('x is 6')
-	}
-	case 7 {
-		print('x is 7')
-	}
+  case 5 {
+    print('x is 5')
+  }
+  case 6 {
+    print('x is 6')
+  }
+  case 7 {
+    print('x is 7')
+  }
 }
 
 switch y {
-	case 5, 6 {
-		print('y is 5 or 6')
-		break
-	}
-	case get7() {
-		print('x is 7')
-		continue
-	}
-	case 8 {
-		print('x is 7 or 8')
-	}
+  case 5, 6 {
+    print('y is 5 or 6')
+    break
+  }
+  case get7() {
+    print('x is 7')
+    continue
+  }
+  case 8 {
+    print('x is 7 or 8')
+  }
 }
 ```
 

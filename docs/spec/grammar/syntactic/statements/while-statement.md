@@ -14,11 +14,11 @@ WhileStmt = 'while' Expression Block
 
 ```syntek
 while true {
-	print('Running forever!')
+  print('Running forever!')
 }
 
 while x is less than 10 {
-	x = x * 2
+  x = x * 2
 }
 ```
 

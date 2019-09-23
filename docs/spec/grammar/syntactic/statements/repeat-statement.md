@@ -14,11 +14,11 @@ RepeatStmt = 'repeat' Expression 'times' Block
 
 ```syntek
 repeat 10 times {
-	print('Hello, World!')
+  print('Hello, World!')
 }
 
 repeat x times {
-	sum = sum + x
+  sum = sum + x
 }
 ```
 

@@ -25,67 +25,67 @@ ClassDecl = 'class' Identifier GenericParams? Extends? ClassBody
 
 ```syntek
 class MyClass {
-	var language = 'Syntek'
+  var language = 'Syntek'
 
-	function toString(): String {
-		return this.language
-	}
+  function toString(): String {
+    return this.language
+  }
 }
 
 class Child extends MyClass {
-	static var x: Number = 5
-	static var y: Number = 15
+  static var x: Number = 5
+  static var y: Number = 15
 }
 
 class Horse extends Animal, Rideable {
-	function ride() {
-		print('Riding the horse')
-	}
+  function ride() {
+    print('Riding the horse')
+  }
 }
 
 class Goldfish extends Fish, Pet {
-	function feed() {
-		print('Feeding the goldfish')
-	}
+  function feed() {
+    print('Feeding the goldfish')
+  }
 }
 
 class A {
-	function toString() {
-		return 'Class A'
-	}
+  function toString() {
+    return 'Class A'
+  }
 }
 
 class B {
-	function toString() {
-		return 'Class B'
-	}
+  function toString() {
+    return 'Class B'
+  }
 }
 
 class C extends A, B {
-	function toString() { # override because of naming collision
-		return A.super.toString() # this calls toString on A
-	}
+  function toString() { # override because of naming collision
+    return A.super.toString() # this calls toString on A
+  }
 }
 
 # LinkedList
 class Node<T> {
-	var data: T
-	var next: Optional<Node<T>>
-	var previous: Optional<Node<T>>
+  var data: T
+  var next: Optional<Node<T>>
+  var previous: Optional<Node<T>>
 
-	function Node(data: T) {
-		this.data = data
-		this.next = Optional.empty()
-		this.previous = Optional.empty()
-	}
+  function Node(data: T) {
+    this.data = data
+    this.next = Optional.empty()
+    this.previous = Optional.empty()
+  }
 }
 
 class LinkedList<T> {
-	var head: Node<T>
+  var head: Node<T>
 
-	function LinkedList() {
-		this.head = new Node<T>()
-	}
+  function LinkedList() {
+    this.head = new Node<T>()
+  }
 }
 ```
 

@@ -14,11 +14,11 @@ ForStmt = 'for' Identifier ( ':' Type )? 'in' Expression Block
 
 ```syntek
 for x in range(0, 10) {
-	print(x)
+  print(x)
 }
 
 for y: Number in [1, 2, 3] {
-	print(y)
+  print(y)
 }
 ```
 

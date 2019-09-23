@@ -29,12 +29,12 @@ Variables inside block scope are accessible in the block and nested blocks, but 
 
 ```syntek
 if true {
-	var x = 10
-	print(x) # x is accessible here
+  var x = 10
+  print(x) # x is accessible here
 
-	if true {
-		print(x) # x is accessible here
-	}
+  if true {
+    print(x) # x is accessible here
+  }
 }
 
 print(x) # x is not accessible here
@@ -48,8 +48,8 @@ Variables declared at the root of a function are inside function scope. These va
 
 ```syntek
 function main() {
-	var x = 5
-	print(x) # x is accessible here
+  var x = 5
+  print(x) # x is accessible here
 }
 
 main()
@@ -62,8 +62,8 @@ If `x` is declared outside the function scope it will reassign that variable. Sh
 var x = 5
 
 function main() {
-	x = 10
-	print(x) # prints 10
+  x = 10
+  print(x) # prints 10
 }
 
 main()
@@ -76,7 +76,7 @@ Variables declared inside a class are only accessible through the class.
 
 ```syntek
 class MyClass {
-	static var x = 5
+  static var x = 5
 }
 
 print(x) # x is not accessible
@@ -86,8 +86,8 @@ A class scope has a static and instance scope. You can use the same name in both
 
 ```syntek
 class MyClass {
-	static var x = 5
-	var x = 10
+  static var x = 5
+  var x = 10
 }
 ```
 
@@ -97,8 +97,8 @@ You are able to declare a variable in a class regardless of whether it's already
 var x = 5
 
 class MyClass {
-	static var x = 10
-	var x = 15
+  static var x = 10
+  var x = 15
 }
 
 print(x) # prints 5
