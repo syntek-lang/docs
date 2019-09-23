@@ -11,8 +11,8 @@ All variables are non-final and may be reassigned.
 ## Structure
 
 ```grammar
-EmptyVarDecl = 'var' Identifier ( ':' Type )? Newline
-VarDecl = 'var' Identifier ( ':' Type )? '=' Expression Newline
+EmptyVarDecl = 'var' Identifier ( ':' Type )?
+VarDecl = 'var' Identifier ( ':' Type )? '=' Expression
 ```
 
 ## Example
@@ -33,6 +33,5 @@ var matrix: Number[][] = [[1, 2], [3, 4]]
 ## References
 
 - [Type](/spec/grammar/syntactic/#type)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Expression](/spec/grammar/syntactic/expressions/)

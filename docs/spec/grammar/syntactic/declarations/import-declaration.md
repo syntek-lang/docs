@@ -13,8 +13,8 @@ Importing a module will import all variables, functions, classes, and interfaces
 ## Structure
 
 ```grammar
-BuiltinImport = 'import' Identifier ( 'as' Identifier )? Newline
-ExternalImport = 'import' String 'as' Identifier Newline
+BuiltinImport = 'import' Identifier ( 'as' Identifier )?
+ExternalImport = 'import' String 'as' Identifier
 
 ImportDecl = BuiltinImport | ExternalImport
 ```
@@ -32,5 +32,4 @@ import './bar' as bar
 ## References
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [String](/spec/grammar/lexical.html#string)

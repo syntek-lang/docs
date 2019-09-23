@@ -15,69 +15,83 @@ A class can extend multiple other classes. If there is a naming collision with m
 ```grammar
 ClassProp = 'static'? Declaration
 
-ClassBody = Indent ClassProp+ Outdent
+ClassBody = '{' ClassProp+ '}'
 Extends = 'extends' VarLoc ( ',' VarLoc )*
 
-ClassDecl = 'class' Identifier GenericParams? Extends? Newline ClassBody
+ClassDecl = 'class' Identifier GenericParams? Extends? ClassBody
 ```
 
 ## Example
 
 ```syntek
-class MyClass
+class MyClass {
 	var language = 'Syntek'
 
-	function toString(): String
+	function toString(): String {
 		return this.language
+	}
+}
 
-class Child extends MyClass
+class Child extends MyClass {
 	static var x: Number = 5
 	static var y: Number = 15
+}
 
-class Horse extends Animal, Rideable
-	function ride()
+class Horse extends Animal, Rideable {
+	function ride() {
 		print('Riding the horse')
+	}
+}
 
-class Goldfish extends Fish, Pet
-	function feed()
+class Goldfish extends Fish, Pet {
+	function feed() {
 		print('Feeding the goldfish')
+	}
+}
 
-class A
-	function toString()
+class A {
+	function toString() {
 		return 'Class A'
+	}
+}
 
-class B
-	function toString()
+class B {
+	function toString() {
 		return 'Class B'
+	}
+}
 
-class C extends A, B
-	function toString() # override because of naming collision
+class C extends A, B {
+	function toString() { # override because of naming collision
 		return A.super.toString() # this calls toString on A
+	}
+}
 
 # LinkedList
-class Node<T>
+class Node<T> {
 	var data: T
 	var next: Optional<Node<T>>
 	var previous: Optional<Node<T>>
 
-	function Node(data: T)
+	function Node(data: T) {
 		this.data = data
 		this.next = Optional.empty()
 		this.previous = Optional.empty()
+	}
+}
 
-class LinkedList<T>
+class LinkedList<T> {
 	var head: Node<T>
 
-	function LinkedList()
+	function LinkedList() {
 		this.head = new Node<T>()
+	}
+}
 ```
 
 ## References
 
 - [Type](/spec/grammar/syntactic/#type)
-- [Indent](/spec/grammar/lexical.html#indent)
-- [Outdent](/spec/grammar/lexical.html#outdent)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Declaration](/spec/grammar/syntactic/declarations/)
 - [Variable Location](/spec/grammar/syntactic/#variable-location)

@@ -2,8 +2,6 @@
 
 This chapter describes the syntactic grammar of Syntek. It is split up into [declarations](/spec/grammar/syntactic/declarations/), [expressions](/spec/grammar/syntactic/expressions/), and [statements](/spec/grammar/syntactic/statements/).
 
-Despite being indentation based, parsing is done relatively lax. Whitespace at the right-hand side of declarations, expressions, and statements can often be ignored, because the parser knows what the next token should be for the code to be valid.
-
 ## Structure
 
 Each token has it's own page, which contains an introduction with information about the token, the grammar of the token, examples of the token, and links to other tokens that got referenced.
@@ -133,11 +131,9 @@ Array<Optional<Number>>[]
 ### Block
 
 ```grammar
-Block = Indent ( Declaration | Expression | Statement )+ Outdent
+Block = '{' ( Declaration | Expression | Statement )+ '}'
 ```
 
-- [Indent](/spec/grammar/lexical.html#indent)
-- [Outdent](/spec/grammar/lexical.html#outdent)
 - [Declaration](/spec/grammar/syntactic/declarations/)
 - [Expression](/spec/grammar/syntactic/expressions/)
 - [Statement](/spec/grammar/syntactic/statements/)
@@ -149,12 +145,11 @@ Param = Identifier ( ':' Type )?
 ParamList = '(' ( Param ( ',' Param )* )? ')'
 ReturnValue = ':' ( Type | 'void' )
 
-FuncSig = 'function' GenericParams? Identifier ParamList ReturnValue? Newline
+FuncSig = 'function' GenericParams? Identifier ParamList ReturnValue?
 ```
 
 More info: [Function Declaration](/spec/grammar/syntactic/declarations/function-declaration.html)
 
 - [Type](/spec/grammar/syntactic/#type)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Generic Parameters](/spec/grammar/syntactic/#generic-parameters)

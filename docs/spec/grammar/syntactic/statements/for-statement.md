@@ -7,23 +7,24 @@ The iterator expression must resolve to an array.
 ## Structure
 
 ```grammar
-ForStmt = 'for' Identifier ( ':' Type )? 'in' Expression Newline Block
+ForStmt = 'for' Identifier ( ':' Type )? 'in' Expression Block
 ```
 
 ## Example
 
 ```syntek
-for x in range(0, 10)
+for x in range(0, 10) {
 	print(x)
+}
 
-for y: Number in [1, 2, 3]
+for y: Number in [1, 2, 3] {
 	print(y)
+}
 ```
 
 ## References
 
 - [Type](/spec/grammar/syntactic/#type)
 - [Block](/spec/grammar/syntactic/#block)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
 - [Expression](/spec/grammar/syntactic/expressions/)

@@ -9,31 +9,33 @@ If the expression does not resolve to a boolean an error must be thrown.
 ## Structure
 
 ```grammar
-IfStmt = 'if' Expression Newline Block ElseStmt?
-ElseStmt = 'else' ( IfStmt | ( Newline Block ) )
+IfStmt = 'if' Expression Block ElseStmt?
+ElseStmt = 'else' ( IfStmt | Block )
 ```
 
 ## Example
 
 ```syntek
-if x is less than 5
+if x is less than 5 {
 	print('x is 5')
+}
 
-if time is less than 18
+if time is less than 18 {
 	print('Good day')
-else
+} else {
 	print('Good evening')
+}
 
-if time is less than 10
+if time is less than 10 {
 	print('Good morning')
-else if time is less than 18
+} else if time is less than 18 {
 	print('Good day')
-else
+} else {
 	print('Good evening')
+}
 ```
 
 ## References
 
 - [Block](/spec/grammar/syntactic/#block)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Expression](/spec/grammar/syntactic/expressions/)

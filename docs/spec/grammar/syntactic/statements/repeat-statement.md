@@ -7,21 +7,22 @@ The expression is evaluated once at the start of the repeat statement. The expre
 ## Structure
 
 ```grammar
-RepeatStmt = 'repeat' Expression 'times' Newline Block
+RepeatStmt = 'repeat' Expression 'times' Block
 ```
 
 ## Example
 
 ```syntek
-repeat 10 times
+repeat 10 times {
 	print('Hello, World!')
+}
 
-repeat x times
+repeat x times {
 	sum = sum + x
+}
 ```
 
 ## References
 
 - [Block](/spec/grammar/syntactic/#block)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Expression](/spec/grammar/syntactic/expressions/)

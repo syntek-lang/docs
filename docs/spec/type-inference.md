@@ -90,8 +90,9 @@ while a
 
 ```syntek
 # T -> T
-function identity(x)
+function identity(x) {
 	return x
+}
 
 var x = identity(5) # Number
 var y = identity(true) # Boolean
@@ -99,8 +100,9 @@ var y = identity(true) # Boolean
 
 ```syntek
 # Number -> Number
-function add5(x)
+function add5(x) {
 	return x + 5
+}
 
 var x = add5(10) # Number
 var y = add5(true) # Error
@@ -111,16 +113,18 @@ var y = add5(true) # Error
 In the following code no explicit types are provided. Despite this, all types can be inferred.
 
 ```syntek
-function multiply(a, b)
+function multiply(a, b) {
 	# sum is a number, because 0 is a number.
 	var sum = 0
 
 	# b must be number.
-	repeat b times
+	repeat b times {
 
 		# a must be a number, because it's used in an arithmetic binary expression.
 		sum = sum + a
+	}
 
 	# sum is returned, which is a number, so multiply returns a number.
 	return sum
+}
 ```

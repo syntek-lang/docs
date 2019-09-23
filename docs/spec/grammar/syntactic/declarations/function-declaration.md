@@ -17,30 +17,39 @@ FuncDecl = FuncSig Block
 ## Example
 
 ```syntek
-function main()
+function main() {
 	print('Hello, World!')
+}
 
-function main(): void
+function main(): void {
 	print('Hello, World!')
+}
 
-function add(a, b)
+function add(a, b) {
 	return a + b
+}
 
-function multiply(a: Number, b: Number)
+function multiply(a: Number, b: Number) {
 	return a * b
+}
 
-function pow(a, b): Number
+function pow(a, b): Number {
 	return a ^ b
+}
 
-function printNumbers(numbers: Number[])
-	for num in numbers
+function printNumbers(numbers: Number[]) {
+	for num in numbers {
 		print(num)
+	}
+}
 
-function identity(x)
+function identity(x) {
 	return x
+}
 
-function <T> identity(x: T): T
+function <T> identity(x: T): T {
 	return x
+}
 ```
 
 ## References

@@ -10,21 +10,13 @@ Whitespace is all the empty space inside a Syntek program, and the tokens that g
 
 A newline is indicated by a `LF` or `CRLF` character.
 
-### Indent
-
-An indent token is added when the current line starts with more tabs than the previous line.
-
-### Outdent
-
-An outdent token is added when the current line starts with less tabs than the previous line.
-
 ### Comment
 
 A comment starts with `#` and ends on the first newline character. To allow a line to contain a statement and a comment, the newline character is not consumed by the comment.
 
 ### Empty lines
 
-Empty lines are lines that do not contain any characters or only consist of whitespace. Empty lines are ignored by the compiler and do not add an indent or outdent token.
+Empty lines are lines that do not contain any characters or only consist of whitespace, and are ignored by the compiler.
 
 ### Spaces and tabs
 
@@ -70,7 +62,7 @@ The following characters represent operators and punctuation:
 ```syntek
 =
 + - * / % ^
-. , [ ] ( ) < > :
+. , [ ] ( ) { } < > :
 ```
 
 ## Literals

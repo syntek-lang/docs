@@ -29,27 +29,33 @@ The following code shows an interactive snake assignment. An interactive demo ca
 ```syntek
 var direction = 1
 
-function arrowUp()
+function arrowUp() {
 	direction = 0
+}
 
-function arrowRight()
+function arrowRight() {
 	direction = 1
+}
 
-function arrowDown()
+function arrowDown() {
 	direction = 2
+}
 
-function arrowLeft()
+function arrowLeft() {
 	direction = 3
+}
 
-function loop()
-	if direction is 0
+function loop() {
+	if direction is 0 {
 		moveUp()
-	else if direction is 1
+	} else if direction is 1 {
 		moveRight()
-	else if direction is 2
+	} else if direction is 2 {
 		moveDown()
-	else if direction is 3
+	} else if direction is 3 {
 		moveLeft()
+	}
+}
 ```
 
 ## Support

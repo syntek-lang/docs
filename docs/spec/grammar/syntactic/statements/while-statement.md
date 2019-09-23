@@ -7,21 +7,22 @@ The expression of a while statement is evaluated at the start of every iteration
 ## Structure
 
 ```grammar
-WhileStmt = 'while' Expression Newline Block
+WhileStmt = 'while' Expression Block
 ```
 
 ## Example
 
 ```syntek
-while true
+while true {
 	print('Running forever!')
+}
 
-while x is less than 10
+while x is less than 10 {
 	x = x * 2
+}
 ```
 
 ## References
 
 - [Block](/spec/grammar/syntactic/#block)
-- [Newline](/spec/grammar/lexical.html#newline)
 - [Expression](/spec/grammar/syntactic/expressions/)
