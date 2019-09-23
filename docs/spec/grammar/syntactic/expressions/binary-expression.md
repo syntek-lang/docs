@@ -6,7 +6,7 @@ A binary expression is an operation with a left- and right-hand argument. There 
 - Arithmetic
 - Logical
 
-The left- and right-hand side of `is` and `is not` must be a number or boolean. The left- and right-hand side of `is less than` and `is greater than` must be a number.
+The left- and right-hand side of `==` and `!=` must be a number or boolean. The left- and right-hand side of `<` and `>` must be a number.
 
 The left- and right-hand side of an arithmetic binary expression must be a number.
 
@@ -17,7 +17,7 @@ The logical operators short-circuit. If the left-hand side of `and` is false, th
 ## Structure
 
 ```grammar
-ComparisonOp = 'is' | 'is not' | 'is less than' | 'is greater than'
+ComparisonOp = '==' | '!=' | '<' | '>'
 ArithmeticOp = '+' | '-' | '*' | '/' | '%' | '^'
 LogicalOp = 'and' | 'or'
 
@@ -30,8 +30,8 @@ BinaryExpr = Expression BinaryOp Expression
 ```syntek
 5 + 10
 true or false
-61 is less than 162
-(2 * 3) is 6
+61 < 162
+(2 * 3) == 6
 true and fn()
 ```
 

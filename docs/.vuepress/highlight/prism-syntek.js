@@ -1,7 +1,13 @@
 module.exports = (prism) => {
-  function wordsToRegex(keywords) {
-    return new RegExp(`\\b(?:${keywords.join('|')})\\b`);
+  function prepareRegex(array) {
+    return array
+      .sort((a, b) => b.length - a.length)
+      .map(regex => regex.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+      .join('|');
   }
+
+  const charsToRegex = chars => new RegExp(`(?:${prepareRegex(chars)})`);
+  const wordsToRegex = keywords => new RegExp(`\\b(?:${prepareRegex(keywords)})\\b`);
 
   // eslint-disable-next-line no-param-reassign
   prism.languages.syntek = {
@@ -22,12 +28,11 @@ module.exports = (prism) => {
       'import', 'as',
       'for', 'in', 'repeat', 'times', 'while', 'continue', 'break',
       'and', 'or', 'not',
-      'is', 'greater', 'less', 'than',
       'var',
     ]),
 
     'class-name': /\b[A-Z]\w*/,
-    function: /[a-zA-Z_]\w*(?=\s*(?:\(|<))/,
+    function: /[a-zA-Z_]\w*(?=\s*(?:\())/,
 
     property: {
       pattern: /(\.)[a-zA-Z_]\w*(?!\s*\()/,
@@ -36,7 +41,11 @@ module.exports = (prism) => {
 
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
-    operator: /[+\-*/%^=]/,
-    punctuation: /[.,[\](){}<>:]/,
+    operator: charsToRegex([
+      '=',
+      '+', '-', '*', '/', '%', '^',
+      '==', '!=', '<', '>',
+    ]),
+    punctuation: charsToRegex('. , [ ] ( ) { } :'.split(' ')),
   };
 };

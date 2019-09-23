@@ -7,13 +7,13 @@ Syntek has strong type inference capabilities. Due to the strict nature of opera
 ```syntek
 # a and b must be a number, or boolean.
 # x is a boolean.
-var x = a is b
-var x = a is not b
+var x = a == b
+var x = a != b
 
 # a and b must be a number.
 # x is a boolean.
-var x = a is less than b
-var x = a is greater than b
+var x = a < b
+var x = a > b
 
 # a and b must be a number.
 # x is a number.

@@ -16,19 +16,19 @@ ElseStmt = 'else' ( IfStmt | Block )
 ## Example
 
 ```syntek
-if x is less than 5 {
+if x < 5 {
   print('x is 5')
 }
 
-if time is less than 18 {
+if time < 18 {
   print('Good day')
 } else {
   print('Good evening')
 }
 
-if time is less than 10 {
+if time < 10 {
   print('Good morning')
-} else if time is less than 18 {
+} else if time < 18 {
   print('Good day')
 } else {
   print('Good evening')

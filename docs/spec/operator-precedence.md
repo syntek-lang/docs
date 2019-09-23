@@ -53,16 +53,16 @@ This chapter describes the order in which the grammar should be parsed. The foll
 
   <tr>
     <td rowspan="3">7</td>
-    <td>is less than</td>
+    <td>Less Than</td>
   </tr>
-  <tr><td>is greater than</td></tr>
+  <tr><td>Greater Than</td></tr>
   <tr><td><a href="/spec/grammar/syntactic/expressions/instanceof-expression.html">Instanceof Expression</a></td></tr>
 
   <tr>
     <td rowspan="2">6</td>
-    <td>is</td>
+    <td>Equality</td>
   </tr>
-  <tr><td>is not</td></tr>
+  <tr><td>Inequality</td></tr>
 
   <tr>
     <td>5</td>

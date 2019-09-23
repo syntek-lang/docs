@@ -17,7 +17,7 @@ while true {
   print('Running forever!')
 }
 
-while x is less than 10 {
+while x < 10 {
   x = x * 2
 }
 ```

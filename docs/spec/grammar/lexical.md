@@ -51,7 +51,6 @@ async
 import as
 for in repeat times while continue break
 and or not
-is greater less than
 var
 ```
 
@@ -60,9 +59,13 @@ var
 The following characters represent operators and punctuation:
 
 ```syntek
+# Operators
 =
 + - * / % ^
-. , [ ] ( ) { } < > :
+== != < >
+
+# Punctuation
+. , [ ] ( ) { } :
 ```
 
 ## Literals
