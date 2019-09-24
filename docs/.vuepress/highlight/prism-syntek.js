@@ -44,7 +44,7 @@ module.exports = (prism) => {
     operator: charsToRegex([
       '=',
       '+', '-', '*', '/', '%', '^',
-      '==', '!=', '<', '>',
+      '==', '!=', '<', '>', '<=', '>=',
     ]),
     punctuation: charsToRegex('. , [ ] ( ) { } :'.split(' ')),
   };

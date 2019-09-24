@@ -1,3 +1,14 @@
+/* Hide external link icon on images */
 img + .icon.outbound {
   display: none;
+}
+
+/* Show 'tek' in the corner of Syntek codeblocks */
+div[class~="language-syntek"]::before {
+  content: "tek";
+}
+
+/* Show 'grammar' in the corner of grammar codeblocks */
+div[class~="language-grammar"]::before {
+  content: "grammar";
 }

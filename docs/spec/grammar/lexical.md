@@ -62,7 +62,7 @@ The following characters represent operators and punctuation:
 # Operators
 =
 + - * / % ^
-== != < >
+== != < > <= >=
 
 # Punctuation
 . , [ ] ( ) { } :

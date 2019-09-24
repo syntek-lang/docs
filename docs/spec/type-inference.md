@@ -14,6 +14,8 @@ var x = a != b
 # x is a boolean.
 var x = a < b
 var x = a > b
+var x = a >= b
+var x = a <= b
 
 # a and b must be a number.
 # x is a number.

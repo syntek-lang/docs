@@ -6,7 +6,7 @@ A binary expression is an operation with a left- and right-hand argument. There 
 - Arithmetic
 - Logical
 
-The left- and right-hand side of `==` and `!=` must be a number or boolean. The left- and right-hand side of `<` and `>` must be a number.
+The left- and right-hand side of `==` and `!=` must be a number or boolean. The left- and right-hand side of `<`, `>`, `<=`, and `>=` must be a number.
 
 The left- and right-hand side of an arithmetic binary expression must be a number.
 
@@ -17,7 +17,7 @@ The logical operators short-circuit. If the left-hand side of `and` is false, th
 ## Structure
 
 ```grammar
-ComparisonOp = '==' | '!=' | '<' | '>'
+ComparisonOp = '==' | '!=' | '<' | '>' | '<=' | '>='
 ArithmeticOp = '+' | '-' | '*' | '/' | '%' | '^'
 LogicalOp = 'and' | 'or'
 
