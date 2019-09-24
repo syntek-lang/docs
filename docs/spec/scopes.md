@@ -4,26 +4,9 @@ There are 3 different scopes in Syntek that define where a variable can be acces
 
 [[toc]]
 
-## File Scope
-
-Variables declared outside of a function, class, and block are in file scope. Variables in file scope are accessible in the entire file.
-
-```syntek
-var x = 5
-print(x) # x is accessible here
-```
-
-Variables declared in file scope, excluding imports, are automatically exported.
-
 ## Block Scope
 
-When a variable is declared in one of the following statements, it is in a block scope:
-
-- If
-- Switch
-- For
-- Repeat
-- While
+When a variable is declared in a block, which is between `{}`, it is in block scope.
 
 Variables inside block scope are accessible in the block and nested blocks, but not outside of the block.
 
@@ -40,34 +23,21 @@ if true {
 print(x) # x is not accessible here
 ```
 
-## Function Scope
+## File Scope
 
-Variables declared at the root of a function are inside function scope. These variables are available inside the entire function, but not outside of it.
-
-`x` is declared inside the function `main`, which makes it available inside the function. `x` is not accessible outside the function `main`.
+File scope is similar to block scope, but all variables, excluding imports, are automatically exported. A variable is in file scope when it is at the top level of a file.
 
 ```syntek
-function main() {
-  var x = 5
-  print(x) # x is accessible here
-}
+# math is not exported
+import math
 
-main()
-print(x) # x is not accessible here
-```
-
-If `x` is declared outside the function scope it will reassign that variable. Shadowing variables is not possible.
-
-```syntek
+# x is exported
 var x = 5
 
-function main() {
-  x = 10
-  print(x) # prints 10
+# foo is exported
+function foo() {
+  print('bar')
 }
-
-main()
-print(x) # prints 10
 ```
 
 ## Class Scope

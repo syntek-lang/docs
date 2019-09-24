@@ -81,9 +81,6 @@ case a
 # x is T.
 for x in a
 
-# a must be a number.
-repeat a times
-
 # a must be a boolean.
 while a
 ```
@@ -120,7 +117,7 @@ function multiply(a, b) {
   var sum = 0
 
   # b must be number.
-  repeat b times {
+  for _ in range(b) {
 
     # a must be a number, because it's used in an arithmetic binary expression.
     sum = sum + a

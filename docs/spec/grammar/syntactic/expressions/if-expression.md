@@ -9,7 +9,7 @@ If expressions can be used to assign a value to a variable using `yield`, simila
 ## Structure
 
 ```grammar
-IfExpr = 'if' Expression Block ElseStmt?
+IfExpr = 'if' Expression Block ElseExpr?
 ElseExpr = 'else' ( IfExpr | Block )
 ```
 

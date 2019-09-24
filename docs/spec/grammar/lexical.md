@@ -50,7 +50,7 @@ switch case
 function return void
 async
 import as
-for in repeat times while
+for in while
 continue break yield
 and or not
 var
