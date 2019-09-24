@@ -10,7 +10,7 @@ A statement is one of the following:
 - [Return Statement](/spec/grammar/syntactic/statements/return-statement.html)
 - [Yield Statement](/spec/grammar/syntactic/statements/yield-statement.html)
 
-Additionally the following keywords are also seen as a statement:
+Additionally a [block](/spec/grammar/syntactic/#block) and the following keywords are also seen as a statement:
 
 ```syntek
 break continue
