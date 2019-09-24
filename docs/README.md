@@ -46,13 +46,13 @@ function arrowLeft() {
 }
 
 function loop() {
-  if direction is 0 {
+  if direction == 0 {
     moveUp()
-  } else if direction is 1 {
+  } else if direction == 1 {
     moveRight()
-  } else if direction is 2 {
+  } else if direction == 2 {
     moveDown()
-  } else if direction is 3 {
+  } else if direction == 3 {
     moveLeft()
   }
 }
