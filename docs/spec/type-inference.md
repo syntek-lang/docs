@@ -56,7 +56,7 @@ var x = a[b]
 var x = async a
 ```
 
-## If Statement
+## If Expression
 
 ```syntek
 # a and b must be a boolean.

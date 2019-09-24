@@ -20,13 +20,15 @@ module.exports = (prism) => {
     ]),
 
     keyword: wordsToRegex([
-      'class', 'new', 'static', 'this', 'super', 'extends', 'instanceof',
-      'if', 'then', 'else',
+      'class', 'new', 'static', 'extends',
+      'this', 'super', 'instanceof',
+      'if', 'else',
       'switch', 'case',
       'function', 'return', 'void',
       'async',
       'import', 'as',
-      'for', 'in', 'repeat', 'times', 'while', 'continue', 'break',
+      'for', 'in', 'repeat', 'times', 'while',
+      'continue', 'break', 'yield',
       'and', 'or', 'not',
       'var',
     ]),

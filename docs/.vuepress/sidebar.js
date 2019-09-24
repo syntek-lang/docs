@@ -53,8 +53,8 @@ module.exports = {
                 '/spec/grammar/syntactic/expressions/new-expression',
                 '/spec/grammar/syntactic/expressions/instanceof-expression',
                 '/spec/grammar/syntactic/expressions/async-expression',
-                '/spec/grammar/syntactic/expressions/conditional-expression',
                 '/spec/grammar/syntactic/expressions/array-expression',
+                '/spec/grammar/syntactic/expressions/if-expression',
               ],
             },
             {
@@ -62,12 +62,12 @@ module.exports = {
               collapsable: false,
               children: [
                 '/spec/grammar/syntactic/statements/',
-                '/spec/grammar/syntactic/statements/if-statement',
                 '/spec/grammar/syntactic/statements/switch-statement',
                 '/spec/grammar/syntactic/statements/for-statement',
                 '/spec/grammar/syntactic/statements/repeat-statement',
                 '/spec/grammar/syntactic/statements/while-statement',
                 '/spec/grammar/syntactic/statements/return-statement',
+                '/spec/grammar/syntactic/statements/yield-statement',
               ],
             },
           ],
