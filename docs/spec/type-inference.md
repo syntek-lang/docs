@@ -37,7 +37,7 @@ var x = -a
 
 # a must be a boolean.
 # x is a boolean.
-var x = not a
+var x = !a
 ```
 
 ## Index Expression

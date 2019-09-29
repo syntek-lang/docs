@@ -29,7 +29,7 @@ module.exports = (prism) => {
       'import', 'as',
       'for', 'in', 'while',
       'continue', 'break', 'yield',
-      'and', 'or', 'not',
+      'and', 'or',
       'var',
     ]),
 
@@ -44,9 +44,12 @@ module.exports = (prism) => {
     boolean: /\b(?:true|false)\b/,
     number: /\b\d(?:[_\d])*(?:\.\d(?:[_\d])*)?/,
     operator: charsToRegex([
-      '=',
       '+', '-', '*', '/', '%', '^',
-      '==', '!=', '<', '>', '<=', '>=',
+
+      '=', '==',
+      '!', '!=',
+      '<', '<=',
+      '>', '>=',
     ]),
     punctuation: charsToRegex('. , [ ] ( ) { } :'.split(' ')),
   };

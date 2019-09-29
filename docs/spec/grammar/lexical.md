@@ -52,7 +52,7 @@ async
 import as
 for in while
 continue break yield
-and or not
+and or
 var
 ```
 
@@ -62,9 +62,12 @@ The following characters represent operators and punctuation:
 
 ```syntek
 # Operators
-=
 + - * / % ^
-== != < > <= >=
+
+= ==
+! !=
+< <=
+> >=
 
 # Punctuation
 . , [ ] ( ) { } :
