@@ -122,18 +122,25 @@ Block = '{' ( Declaration | Expression | Statement )+ '}'
 - [Expression](/spec/grammar/syntactic/expressions/)
 - [Statement](/spec/grammar/syntactic/statements/)
 
+### Parameter List
+
+```grammar
+Param = Identifier ':' Type
+ParamList = '(' ( Param ( ',' Param )* )? ')'
+```
+
+- [Type](/spec/grammar/syntactic/#type)
+- [Identifier](/spec/grammar/lexical.html#identifiers)
+
 ### Function Signature
 
 ```grammar
-Param = Identifier ( ':' Type )?
-ParamList = '(' ( Param ( ',' Param )* )? ')'
-ReturnValue = ':' ( Type | 'void' )
-
-FuncSig = 'function' GenericParams? Identifier ParamList ReturnValue?
+FuncSig = 'function' GenericParams? Identifier ParamList ( ':' Type )?
 ```
 
 More info: [Function Declaration](/spec/grammar/syntactic/declarations/function-declaration.html)
 
 - [Type](/spec/grammar/syntactic/#type)
 - [Identifier](/spec/grammar/lexical.html#identifiers)
+- [Parameter List](/spec/grammar/syntactic/#parameter-list)
 - [Generic Parameters](/spec/grammar/syntactic/#generic-parameters)

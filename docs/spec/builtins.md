@@ -5,7 +5,7 @@ This chapter covers builtin functions and classes in Syntek. The functions and c
 ## print
 
 ```syntek
-function print(obj: Object): void
+function print(obj: Object)
 ```
 
 `print` outputs a string to console, stdout, or another target. If `obj` is not a string the `toString` method will be called on it.
@@ -91,7 +91,7 @@ class Function<T1, T2, Tn, TResult> extends Object
 
 ## VoidFunction
 
-The `VoidFunction` class is similar to the `Function` class, but it always returns `void`.
+The `VoidFunction` class is similar to the `Function` class, but it does not produce a value.
 
 ```syntek
 class VoidFunction<T1, T2, Tn> extends Object
