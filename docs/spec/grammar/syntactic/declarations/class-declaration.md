@@ -1,6 +1,8 @@
 # Class Declaration
 
-A class declaration stores a class under an identifier. The identifier can be used to create an instance of the class. A class can optionally extend multiple class.
+A class declaration stores a class under an identifier. The identifier can be used to create an instance of the class.
+
+## Regular Class
 
 The class body may only contain function and variable declarations. Declarations can be prefixed with `static` to declare them as static. Variables don't have to be assigned immediately if it is assigned in the constructor.
 
@@ -10,19 +12,31 @@ When a class is instantiated using the `new` keyword the constructor of the clas
 
 A class can extend multiple other classes. If there is a naming collision with methods from the classes that are being extended then the class needs to override the method. A naming collision occurs when two methods with the same parameter count or a variable have the same name on the same level of extending.
 
+## Abstract Class
+
+A class can be made abstract by prefixing it with the `abstract` keyword. An abstract classs can create abstract functions by prefixing the function with `abstract`. If a function is abstract it can not contain a body.
+
+Abstract classes can't be instantiated, but must be extended by a regular class. Functions declared abstract must be implemented in the subclass.
+
+In Syntek a function can be both abstract and static.
+
 ## Structure
 
 ```grammar
-ClassProp = 'static'? Declaration
+Modifier = 'abstract' | 'static'
+
+ClassProp = Modifier* Declaration
 Constructor = 'new' ParamList Block
 
-ClassBody = '{' ( ClassProp | Constructor )+ '}'
+ClassBody = '{' ( ClassProp | Constructor )* '}'
 Extends = 'extends' VarLoc ( ',' VarLoc )*
 
-ClassDecl = 'class' Identifier GenericParams? Extends? ClassBody
+ClassDecl = 'abstract'? 'class' Identifier GenericParams? Extends? ClassBody
 ```
 
 ## Example
+
+Regular class:
 
 ```syntek
 class MyClass {
@@ -87,6 +101,30 @@ class LinkedList<T> {
   new() {
     this.head = new Node<T>()
   }
+}
+```
+
+Abstract class:
+
+```syntek
+abstract class Shape {
+  var width: Number
+  var height: Number
+
+  new(width: Number, height: Number) {
+    this.width = width
+    this.height = height
+  }
+
+  abstract function display()
+
+  abstract function calculateArea(): Number
+}
+
+abstract class Serializable<T> {
+  abstract function serialize(): String
+
+  static abstract function deserialize(value: String): T
 }
 ```
 

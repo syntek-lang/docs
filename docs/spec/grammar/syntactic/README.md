@@ -115,7 +115,7 @@ Array<Optional<Number>>[]
 ### Block
 
 ```grammar
-Block = '{' ( Declaration | Expression | Statement )+ '}'
+Block = '{' ( Declaration | Expression | Statement )* '}'
 ```
 
 - [Declaration](/spec/grammar/syntactic/declarations/)

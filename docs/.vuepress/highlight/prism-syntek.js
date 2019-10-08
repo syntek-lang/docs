@@ -20,7 +20,8 @@ module.exports = (prism) => {
     ]),
 
     keyword: wordsToRegex([
-      'class', 'new', 'static', 'extends',
+      'class', 'extends', 'new',
+      'abstract', 'static',
       'this', 'super', 'instanceof',
       'if', 'else',
       'switch', 'case',

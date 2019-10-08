@@ -43,7 +43,8 @@ HelloWorld
 The following keywords are reserved and cannot be used as identifiers, with the exception of class properties/methods.
 
 ```syntek
-class new static extends
+class extends new
+abstract static
 this super instanceof
 if else
 switch case
