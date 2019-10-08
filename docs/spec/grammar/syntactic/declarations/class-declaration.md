@@ -14,11 +14,11 @@ A class can extend multiple other classes. If there is a naming collision with m
 
 ## Abstract Class
 
-A class can be made abstract by prefixing it with the `abstract` keyword. An abstract classs can create abstract functions by prefixing the function with `abstract`. If a function is abstract it can not contain a body.
+A class can be made abstract by prefixing it with the `abstract` keyword. Abstract classes can't be instantiated directly, but must be extended by a regular class.
 
-Abstract classes can't be instantiated, but must be extended by a regular class. Functions declared abstract must be implemented in the subclass.
+An abstract classs can make a property abstract by prefixing the property with `abstract`. If a property is abstract it can not contain an implementation. The class extending the abstract class must implement all abstract properties.
 
-In Syntek a function can be both abstract and static.
+In Syntek a property can be both static and abstract.
 
 ## Structure
 
