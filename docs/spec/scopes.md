@@ -29,7 +29,7 @@ File scope is similar to block scope, but all variables, excluding imports, are 
 
 ```syntek
 # math is not exported
-import math
+import std.math
 
 # x is exported
 var x = 5

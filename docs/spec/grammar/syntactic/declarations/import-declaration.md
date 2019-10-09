@@ -1,35 +1,34 @@
 # Import Declaration
 
-An import declaration imports a module and stores it under the given identifier. The identifier can be used to retrieve the module.
+An import declaration imports a module, which could be a `.tek` file, and stores it under the given identifier.
 
-There are 2 types of modules. Built-in modules and external modules.
+There are 2 types of import. Full and partial import.
 
-A built-in module can be imported using the modules name after `import`. The name does not have to be in quotes. Optionally the module can be stored under a different name using `as`.
+Full import imports the an entire module and exposes it under the given name.
 
-An external module can be imported using the file location. The file location can be a path on the filesystem or a URL. The location must be in quotes and the import must contain a variable name using `as`.
-
-Importing a module will import all variables, functions, classes, and interfaces declared in the module. It will store these under the specified module name, which can be referenced by using a member expression.
+Partial import imports given variables from a module and exposes them under the given name.
 
 ## Structure
 
 ```grammar
-BuiltinImport = 'import' Identifier ( 'as' Identifier )?
-ExternalImport = 'import' String 'as' Identifier
+Rename = 'as' Identifier
+Expose = '.' '{' Identifier Rename? ( ',' Identifier Rename? )* '}'
 
-ImportDecl = BuiltinImport | ExternalImport
+FullImport = Rename?
+PartialImport = Expose
+
+ImportDecl = 'import' VarLoc ( FullImport | PartialImport )
 ```
 
 ## Example
 
 ```syntek
-import math
-import fs as fileSystem
-
-import './foo' as foo
-import './bar' as bar
+import std.math
+import std.math as myMath
+import std.math.{log, floor as flr}
 ```
 
 ## References
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)
-- [String](/spec/grammar/lexical.html#string)
+- [Variable Location](/spec/grammar/syntactic/#variable-location)

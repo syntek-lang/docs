@@ -1,6 +1,6 @@
 # Modules
 
-There are 3 types of modules in Syntek.
+There are 2 types of modules in Syntek.
 
 [[toc]]
 
@@ -11,7 +11,3 @@ Syntek modules are Syntek source files. Syntek source files have the `.tek` file
 ## Native Module
 
 Native modules add extra functionality to Syntek. Native modules make it possible to port Syntek to different environments, such as Node.js and Arduino. Native modules can install dependencies, add native functions, change configuration, and more.
-
-## Text Module
-
-A text module is a file that is not a Syntek or native module. This file is read as text and returned as a string.
