@@ -24,7 +24,6 @@ module.exports = (prism) => {
       'abstract', 'static',
       'this', 'super', 'instanceof',
       'if', 'else',
-      'switch', 'case',
       'function', 'return',
       'async',
       'import', 'as',

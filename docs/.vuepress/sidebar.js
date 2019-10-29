@@ -62,7 +62,6 @@ module.exports = {
               collapsable: false,
               children: [
                 '/spec/grammar/syntactic/statements/',
-                '/spec/grammar/syntactic/statements/switch-statement',
                 '/spec/grammar/syntactic/statements/for-statement',
                 '/spec/grammar/syntactic/statements/while-statement',
                 '/spec/grammar/syntactic/statements/return-statement',
