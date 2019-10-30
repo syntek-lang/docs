@@ -45,12 +45,6 @@ The `Object` class is the starting point for all values in Syntek.
 class Object
 ```
 
-## Class
-
-```syntek
-class Class<T> extends Object
-```
-
 ## Number
 
 ```syntek
@@ -106,5 +100,5 @@ class Error extends Object
 ## Promise
 
 ```syntek
-class Promise extends Object
+class Promise<T> extends Object
 ```
