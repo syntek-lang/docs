@@ -4,14 +4,14 @@ A variable declaration stores a value under the given identifier. The identifier
 
 A variable can also be declared without a value, but it can't be used until it is assigned a value.
 
-If a variable does not explicitely provide a type, the type will be inferred by it's usage.
+If a variable does not explicitely provide a type, the type will be inferred.
 
 All variables are non-final and may be reassigned.
 
 ## Structure
 
 ```grammar
-EmptyVarDecl = 'var' Identifier ( ':' Type )?
+EmptyVarDecl = 'var' Identifier ':' Type
 VarDecl = 'var' Identifier ( ':' Type )? '=' Expression
 ```
 
@@ -19,9 +19,9 @@ VarDecl = 'var' Identifier ( ':' Type )? '=' Expression
 
 ```syntek
 # EmptyVarDecl
-var x
-var y: Number
-var z: Number[]
+var x: Number
+var y: Number[]
+var z: Number[][]
 
 # VarDecl
 var x = 5
