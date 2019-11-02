@@ -6,7 +6,7 @@ A new expression creates an instance of the given class.
 
 ```grammar
 ParamList = '(' ( Expression ( ',' Expression )* )? ')'
-NewExpr = 'new' Expression GenericArgs? ParamList
+NewExpr = 'new' VarLoc GenericArgs? ParamList
 ```
 
 ## Example
@@ -22,4 +22,5 @@ new furniture.chairs.Chair<Wood>()
 ## References
 
 - [Expression](/spec/grammar/syntactic/expressions/)
+- [Variable Location](/spec/grammar/syntactic/#variable-location)
 - [Generic Arguments](/spec/grammar/syntactic/#generic-arguments)

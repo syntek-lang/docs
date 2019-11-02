@@ -1,6 +1,6 @@
 # Import Declaration
 
-An import declaration imports a module, which could be a `.tek` file, and stores it under the given identifier.
+An import declaration imports a module and stores it under the given identifier.
 
 There are 2 types of import. Full and partial import.
 
