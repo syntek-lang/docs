@@ -69,6 +69,12 @@ class Boolean extends Object
 class Optional<T> extends Object
 ```
 
+## Result
+
+```syntek
+class Result<T, E> extends Object
+```
+
 ## Array
 
 ```syntek
