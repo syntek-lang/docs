@@ -63,13 +63,18 @@ x.y.z
 ### Generic Parameters
 
 ```grammar
-GenericParams = '<' Identifier ( ',' Identifier )* '>'
+Param = Identifier ( 'extends' Type )?
+GenericParams = '<' Param ( ',' Param )* '>'
 ```
 
 ```syntek
 <T>
 <T1, T2>
 <A, B, C>
+
+<A extends B>
+<A extends B<C>>
+<A, B extends Array<A>>
 ```
 
 - [Identifier](/spec/grammar/lexical.html#identifiers)

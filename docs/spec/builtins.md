@@ -8,7 +8,7 @@ This chapter covers builtin functions and classes in Syntek. The functions and c
 function print(obj: Object)
 ```
 
-`print` outputs a string to console, stdout, or another target. If `obj` is not a string the `toString` method will be called on it.
+`print` outputs a string to console, stdout, or another target. The `toString` method is called on `obj` before printing it.
 
 ## range
 
@@ -39,7 +39,7 @@ range(5, 6, 3) # [5]
 
 ## Object
 
-The `Object` class is the starting point for all values in Syntek.
+The `Object` class is the starting point for classes in Syntek. All classes implicitly extend `Object`.
 
 ```syntek
 class Object
@@ -48,37 +48,37 @@ class Object
 ## Number
 
 ```syntek
-class Number extends Object
+class Number
 ```
 
 ## String
 
 ```syntek
-class String extends Object
+class String
 ```
 
 ## Boolean
 
 ```syntek
-class Boolean extends Object
+class Boolean
 ```
 
 ## Optional
 
 ```syntek
-class Optional<T> extends Object
+class Optional<T>
 ```
 
 ## Result
 
 ```syntek
-class Result<T, E> extends Object
+class Result<T, E extends Error>
 ```
 
 ## Array
 
 ```syntek
-class Array<T> extends Object
+class Array<T>
 ```
 
 ## Function
@@ -86,7 +86,7 @@ class Array<T> extends Object
 The `Function` class has a dynamic amount of generic parameters. The generics are the types of the parameters, with the last generic being the return type of the function.
 
 ```syntek
-class Function<T1, T2, Tn, TResult> extends Object
+class Function<T1, T2, Tn, TResult>
 ```
 
 ## VoidFunction
@@ -94,17 +94,17 @@ class Function<T1, T2, Tn, TResult> extends Object
 The `VoidFunction` class is similar to the `Function` class, but it does not produce a value.
 
 ```syntek
-class VoidFunction<T1, T2, Tn> extends Object
+class VoidFunction<T1, T2, Tn>
 ```
 
 ## Error
 
 ```syntek
-class Error extends Object
+class Error
 ```
 
 ## Promise
 
 ```syntek
-class Promise<T> extends Object
+class Promise<T>
 ```
